@@ -18,9 +18,9 @@ app.get('/', (req, res) => {
     console.log("User connected")
 })
 
-app.post("/waitlist", (req, res) => {
+app.post("/api/waitlist", (req, res) => {
     const email = req.body.email;
-    res.send("Thanks for signing up to our waitlist!");
+    res.send(`Thanks for signing up to our waitlist, ${email}!`);
     console.log(`Client ${email} added to waitlist`);
 })
 
