@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 
-p {
+.social-media-container p {
   color: white;
   margin-bottom: 1px;
   font-size: small;
