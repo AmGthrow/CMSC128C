@@ -1,5 +1,7 @@
 const express = require('express');
+const { addToWaitlist } = require('./spreadsheet');
 const app = express();
+
 
 app.listen(9000, () =>
     console.log("Listening on port 9000")
@@ -20,7 +22,7 @@ app.get('/', (req, res) => {
 
 app.post("/api/waitlist", (req, res) => {
     const email = req.body.email;
-    res.send(`Thanks for signing up to our waitlist, ${email}!`);
+    addToWaitlist(email);
     console.log(`Client ${email} added to waitlist`);
 })
 
