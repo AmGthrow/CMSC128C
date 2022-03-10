@@ -5,7 +5,9 @@ import EnrollNowBanner from '../domain/EnrollNowBanner/EnrollNowBanner'
 export default function Home() {
   return (
     <div className='main-container'>
-      <h1> Home</h1>
+      {/* navbar */}
+      <h1>Home</h1>
+      {/* banners */}
       <EnrollNowBanner />
       <Footer/>
     </div>
