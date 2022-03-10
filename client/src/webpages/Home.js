@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
-import EnrollNowBanner from '../domain/EnrollNowBanner/EnrollNowBanner'
+import SendEmailBanner from '../domain/SendEmailBanner/SendEmailBanner'
 
 export default function Home() {
   return (
@@ -8,7 +8,10 @@ export default function Home() {
       {/* navbar */}
       <h1>Home</h1>
       {/* banners */}
-      <EnrollNowBanner />
+      
+      <SendEmailBanner/>
+
+      {/* footer */}
       <Footer/>
     </div>
   )
