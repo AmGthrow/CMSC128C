@@ -1,6 +1,6 @@
 import React from 'react'
 import EmailInputField from './EmailInputField/EmailInputField'
-import './EnrollNowBanner.css'
+import './SendEmailBanner.css'
 
 function IndexFingerPoint () {
     return (
