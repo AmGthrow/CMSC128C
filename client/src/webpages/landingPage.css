@@ -5,6 +5,11 @@ body{
 }
 
 #hero-shot {
+    /* background image stuff */
+    background-image: url("./hero-bg.jpg");
+    background-size: cover;
+    background-position: right center;
+
     height: 100vh;
     font-family: 'Rubik', sans-serif;
     display: flex;
