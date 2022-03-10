@@ -1,4 +1,5 @@
 import React from 'react';
+import './landingPage.css';
 import logo_textless from "./logo_textless.png";
 import hero_bg from "./hero-bg.jpg";
 
@@ -22,3 +23,4 @@ function HeroShot() {
       <h3>cultivating learning since 2020</h3>
     </div>
   )
+}

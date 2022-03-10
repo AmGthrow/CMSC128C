@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
+
+body{
+    background: #424242;
+}
+
+#hero-shot {
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block-end: 0;
+    font-size: 1.3em;
+}
+
+@media only screen and (min-width: 768px){
+    #hero-shot{
+        align-items: flex-end;
+        padding-right: 5vw;
+        font-size: 1.7em;
+    }
+    /* for right-aligning the Codercademy logo */
+    /* the asset isn't cropped horizontally so we need to offset it a bit */
+    #hero__logo{
+        position: relative;
+        right: -70px;
+    }
+}
+
+#hero-shot > h1, h3{
+    font-weight: 300;
+    margin-block-end: 0;
+}
+
+#hero-shot > h3{
+    color: #7b5828;
+}
+
+#hero-shot > b{
+    font-weight: 600;
+}
+
+#hero__logo{
+    height: 200px;
+    object-fit: contain;
+}
