@@ -9,4 +9,9 @@ The linked workbook needs the following:
 
 # API Endpoints
 ## Waitlist Emails
-The API can store emails from clients signing up for the waitlist. To do this,  send a `POST` request to `/api/waitlist` with the payload `{"email" : client_email_here}`
+The API can store emails from clients signing up for the waitlist. 
+
+![Example of a client subscribing to waitlist](docs/waitlistAPI.gif)
+
+
+Send a `POST` request to `/api/waitlist` with the payload `{"email" : client_email_here}`

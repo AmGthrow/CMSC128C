@@ -15,6 +15,7 @@ app.use(
 
 app.use(express.json())
 
+// TODO: Remove when a frontend view for the landing page is available
 app.get('/', (req, res) => {
     res.sendFile('src/index.html', { root: __dirname })
     console.log("User connected")
