@@ -1,5 +1,5 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
 import { SocialIcon } from 'react-social-icons';
 
 function SocialMediaLinks () {
@@ -14,7 +14,9 @@ function SocialMediaLinks () {
 
 function Logo () {
   return(
-    <div> <img src={require('../../assets/footer-logo.png')}  alt='footer logo' /> </div>
+    <div className='img-logo-container'> 
+      <img src={require('../../assets/footer-logo.png')}  alt='footer logo' /> 
+    </div>
     )
 }
 
@@ -23,19 +25,20 @@ export default function Footer() {
     <div className='main-footer'>
 
       <div className='container'>
-          {/* logo */}
-          <div className='coder-academy-logo'>
-              <Logo/>
-              {/* divider */}
-              <div className='divider'></div>
-      
-          </div>
+        {/* logo */}
+        <div className='coder-academy-logo'>
+            <Logo/>
+        {/* divider */}
+        <div className='divider'></div>
+      </div>
 
-          {/* social media links */}
-          <div className='social-media-container'>
-              <p>Follow us!</p>
-              <SocialMediaLinks/>
+        {/* social media links */}
+        <div className='social-media-container'>
+          <div className='sm-content'>
+            <p className='message'> Follow us! </p>
+              <SocialMediaLinks />
           </div>
+        </div>
 
         </div>
     </div>

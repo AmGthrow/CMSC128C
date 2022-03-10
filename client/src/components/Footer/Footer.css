@@ -16,12 +16,9 @@
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
-  /* padding: 30px; */
-  /* margin-left: 10px; */
 }
 
 .coder-academy-logo {
-  /* width: 100%; */
   min-width: 70%;
   display: flex;
   justify-content: flex-start;
@@ -33,7 +30,6 @@
 }
 
 .img-logo-container img {
-  /* margin-left: 42px; */
   width: 100%;
 }
 
@@ -44,75 +40,49 @@
 
 .social-media-container {
   min-width: 30%;
+  margin-right: 30px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
-  /* padding: 20px; */
 }
 
 .sm-content {
-  min-width: 30%;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sm-content p {
-  width: 100%;
-  text-align: center;
+.sm-content .message {
+  font-size: "Rubik";
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2vw;
 }
 
 .links {
+  min-width: 0%;
+  padding: 0;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  width: 100%;
   padding: 0;
   list-style-type: none;
-}
-
-.links li {
-  min-width: 2%;
-  /* background-color: #f7ab;
-  border: 2px solid; */
-  margin: 0;
-  padding: 0;
 }
 
 .icon {
-  margin: 5px;
-  border-radius: 50%;
+  margin: 2px;
+  padding: 0vw;
   background-color: #ffffff;
-}
-
-/* .social-media-container p {
-  color: #ffffff;
-  font-family: "Rubik";
-  text-align: center;
-  margin-bottom: 5px;
-  min-width: 100%;
-  width: 100%;
-} */
-
-/* .links-container {
-  min-width: 10%;
-  background-color: #f7ab48;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-}
-
-.social-media-container .icon {
-  width: 100%;
-  margin: 5px;
   border-radius: 50%;
-  background-color: #ffffff;
 }
 
 .icon:hover {
   border: 2px solid #ffffff;
   box-shadow: 0 0 10px #ffffff;
-} */
+}
