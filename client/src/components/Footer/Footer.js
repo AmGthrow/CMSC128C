@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function SocialMediaLinks () {
   return(
-    <ul className='social-media-links'>
+    <ul className='links'>
       <li> <SocialIcon url='https://www.facebook.com/coderacademyAU/' network='facebook' className='icon'/> </li>
       <li> <SocialIcon url='https://www.instagram.com/coder_academy/' network='instagram' className='icon'/> </li>
       <li> <SocialIcon url='https://twitter.com/CoderAcademy_au/' network='twitter' className='icon'/> </li>
@@ -14,7 +14,7 @@ function SocialMediaLinks () {
 
 function Logo () {
   return(
-    <> <img src={require('../../assets/footer-logo.png')}  alt='footer logo' /> </>
+    <div> <img src={require('../../assets/footer-logo.png')}  alt='footer logo' /> </div>
     )
 }
 
@@ -23,14 +23,13 @@ export default function Footer() {
     <div className='main-footer'>
 
       <div className='container'>
-
           {/* logo */}
           <div className='coder-academy-logo'>
-            <Logo/>
+              <Logo/>
+              {/* divider */}
+              <div className='divider'></div>
+      
           </div>
-
-          {/* divider */}
-          <div className='footer-divider'></div>
 
           {/* social media links */}
           <div className='social-media-container'>

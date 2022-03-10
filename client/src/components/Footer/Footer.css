@@ -1,62 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Montserrat+Alternates:wght@700&family=Poppins:wght@300;400;600;800;900&display=swap");
-
 .main-footer {
-  box-sizing: border-box;
+  width: 100%;
+  background-color: #f7ab48;
   display: flex;
   justify-content: center;
-  position: absolute;
-  width: 100vw;
-  height: 41%;
-  background-color: #f7ab48;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .main-footer .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* padding: 30px; */
+  /* margin-left: 10px; */
 }
 
 .coder-academy-logo {
-  padding: 5px;
+  /* width: 100%; */
+  min-width: 70%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .coder-academy-logo img {
-  display: flex;
-  justify-content: right;
+  margin-left: 42px;
   width: 300px;
 }
 
-.footer-divider {
-  border-left: 2px solid white;
-  height: 100%;
-  position: relative;
+.coder-academy-logo .divider {
+  border-left: 3px solid #ffffff;
 }
 
 .social-media-container {
+  width: 30%;
   display: flex;
-  align-items: center;
-  padding: 30px;
   flex-direction: column;
+  justify-content: flex-end;
+  /* padding: 20px; */
 }
 
 .social-media-container p {
-  color: white;
-  margin-bottom: 1px;
-  font-size: small;
-  font-family: "Poppins";
-  font-weight: 600;
+  color: #ffffff;
+  font-family: "Rubik";
+  text-align: center;
+  margin-bottom: 5px;
+  min-width: 100%;
+  width: 100%;
 }
 
-.social-media-links {
+.social-media-container .links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  /* width: 100%; */
 }
 
-.social-media-links .icon {
-  margin: 10px;
+.social-media-container .icon {
+  margin: 5px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffffff;
+}
+
+.icon:hover {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
 }
