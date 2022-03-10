@@ -6,3 +6,7 @@
 The linked workbook needs the following:
 - a spreadsheet entitled "Waitlist" for storing client emails
 - the "Waitlist" sheet needs to have a header called "Email"
+
+# API Endpoints
+## Waitlist Emails
+The API can store emails from clients signing up for the waitlist. To do this,  send a `POST` request to `/api/waitlist` with the payload `{"email" : client_email_here}`
