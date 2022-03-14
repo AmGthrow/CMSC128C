@@ -22,9 +22,9 @@ function Logo () {
 
 export default function Footer() {
   return (
-    <div className='main-footer'>
+    <div className='footer-container'>
 
-      <div className='container'>
+      <div className='f-content'>
         {/* logo */}
         <div className='coder-academy-logo'>
             <Logo/>

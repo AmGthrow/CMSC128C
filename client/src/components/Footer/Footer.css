@@ -1,4 +1,5 @@
-.main-footer {
+.footer-container {
+  height: 30vh;
   width: 100%;
   background-color: #f7ab48;
   display: flex;
@@ -9,13 +10,13 @@
   padding-bottom: 40px;
 }
 
-.main-footer .container {
+.f-content {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .coder-academy-logo {
@@ -25,8 +26,8 @@
 }
 
 .img-logo-container {
-  margin-left: 42px;
-  min-width: 10%;
+  margin-left: 4em;
+  min-width: 15%;
 }
 
 .img-logo-container img {
