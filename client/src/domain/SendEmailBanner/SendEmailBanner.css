@@ -1,4 +1,5 @@
-.enroll-now-banner {
+.enroll-now-container {
+  height: 70vh;
   width: 100%;
   background-color: rgb(253 230 138);
   display: flex;
@@ -7,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.content {
+.en-content {
   display: flex;
   align-items: center;
   width: 100%;

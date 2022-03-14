@@ -14,15 +14,13 @@ function IndexFingerPoint () {
 
 export default function EnrollNowBanner() {
   return (
-    <div className='enroll-now-banner'>
-        <div className='content'>
-        {/* email-input-container */}
+    <div className='enroll-now-container'>
+        <div className='en-content'>
             <div className='email-input-container'>
-                <p className='message-1'>Enroll Now!</p>
-                <p className='message-2'>Leave us your email, and we'll contact you!</p>
-                <EmailInputField />
+                    <p className='message-1'>Enroll Now!</p>
+                    <p className='message-2'>Leave us your email, and we'll contact you!</p>
+                    <EmailInputField />
             </div>
-            {/* logo */}
             <IndexFingerPoint />
         </div>
     </div>
