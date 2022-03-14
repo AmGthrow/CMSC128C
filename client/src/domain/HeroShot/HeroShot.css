@@ -3,9 +3,6 @@
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -26,18 +23,14 @@
 
 .content h1 {
   font-weight: 300;
-  margin: 0;
-  font-family: "Rubik", sans-serif;
-  font-size: 3.7vw;
+  font-size: 3.5vw;
   padding-right: 1.5em;
 }
 
 .content h3 {
   color: #7b5828;
   padding-top: 0.5em;
-  padding-right: 3em;
-  margin: 0;
+  padding-right: 2.7em;
   font-size: 2vw;
-  font-weight: 300;
-  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }
