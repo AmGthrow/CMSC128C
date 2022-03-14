@@ -1,13 +1,14 @@
 import React from 'react';
 import './Footer.css';
-import { SocialIcon } from 'react-social-icons';
+import {BsFacebook, BsInstagram} from 'react-icons/bs'
+import {FiTwitter} from 'react-icons/fi'
 
 function SocialMediaLinks () {
   return(
     <ul className='links'>
-      <li> <SocialIcon url='https://www.facebook.com/coderacademyAU/' network='facebook' className='icon'/> </li>
-      <li> <SocialIcon url='https://www.instagram.com/coder_academy/' network='instagram' className='icon'/> </li>
-      <li> <SocialIcon url='https://twitter.com/CoderAcademy_au/' network='twitter' className='icon'/> </li>
+      <li className='icon'> <BsInstagram/> </li>
+      <li className='icon'> <BsFacebook/> </li>
+      <li className='icon'> <FiTwitter/> </li>
     </ul>
   )
 }
