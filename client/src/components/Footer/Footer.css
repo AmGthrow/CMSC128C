@@ -1,0 +1,89 @@
+.footer-container {
+  height: 30vh;
+  width: 100%;
+  background-color: #f7ab48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.f-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.coder-academy-logo {
+  min-width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img-logo-container {
+  margin-left: 4em;
+  min-width: 15%;
+}
+
+.img-logo-container img {
+  width: 100%;
+}
+
+.divider {
+  border-left: 3px solid #ffffff;
+  width: 90%;
+}
+
+.social-media-container {
+  min-width: 30%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sm-content {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-content .message {
+  font-family: "Rubik";
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2vw;
+}
+
+.links {
+  min-width: 0%;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.icon {
+  margin: 2px;
+  padding: 0vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+}

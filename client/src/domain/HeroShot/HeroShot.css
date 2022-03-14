@@ -1,0 +1,43 @@
+.hero-shot-container {
+  background-image: url("../../assets/hero-bg.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.content #hero__logo {
+  width: 70%;
+}
+
+.content h1 {
+  font-weight: 300;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.7vw;
+  padding-right: 1.5em;
+}
+
+.content h3 {
+  color: #7b5828;
+  padding-top: 0.5em;
+  padding-right: 3em;
+  margin: 0;
+  font-size: 2vw;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+}
