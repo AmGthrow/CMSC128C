@@ -1,11 +1,10 @@
 .footer-container {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background-color: #f7ab48;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -20,27 +19,25 @@
 }
 
 .coder-academy-logo {
-  min-width: 70%;
+  min-width: 80%;
   display: flex;
-  justify-content: flex-start;
 }
 
 .img-logo-container {
-  margin-left: 4em;
-  min-width: 15%;
+  margin-left: 4.5em;
 }
 
 .img-logo-container img {
-  width: 100%;
+  width: 90%;
 }
 
 .divider {
   border-left: 3px solid #ffffff;
-  width: 90%;
+  width: 100%;
 }
 
 .social-media-container {
-  min-width: 30%;
+  min-width: 20%;
   margin-right: 30px;
   display: flex;
   justify-content: flex-end;
@@ -49,41 +46,25 @@
 .sm-content {
   width: 100%;
   display: flex;
-  margin: 0;
-  padding: 0;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .sm-content .message {
-  font-family: "Rubik";
   color: #ffffff;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  font-size: 1.2vw;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .links {
-  min-width: 0%;
-  padding: 0;
-  margin-top: 10px;
   display: flex;
   justify-content: center;
-  padding: 0;
   list-style-type: none;
 }
 
 .icon {
-  margin: 2px;
-  padding: 0vw;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
-
-.icon:hover {
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 10px #ffffff;
+  display: flex;
+  margin: 0.8em;
+  color: #ffffff;
+  font-size: 2vw;
 }
