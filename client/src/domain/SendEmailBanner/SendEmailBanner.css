@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .en-content {
@@ -38,13 +39,13 @@
 
 .index-finger-container {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   width: 100%;
+  position: relative;
+  left: 2.5em;
+  bottom: 0.5em;
 }
 
 .index-finger-container img {
-  position: absolute;
-  width: 50%;
-  right: 0;
+  width: 135%;
 }
