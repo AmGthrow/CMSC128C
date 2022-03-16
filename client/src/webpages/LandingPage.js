@@ -3,6 +3,7 @@ import HeroShot from '../domain/HeroShot/HeroShot'
 import SendEmailBanner from '../domain/SendEmailBanner/SendEmailBanner'
 import Footer from '../components/Footer/Footer'
 import NavBar from '../components/NavBar/NavBar'
+import MainFeatures from '../domain/MainFeatures/MainFeatures'
 
 export default function LandingPage() {
   return (
@@ -12,6 +13,8 @@ export default function LandingPage() {
 
       {/* banners */}
       <HeroShot/>
+
+      <MainFeatures/>
 
        <SendEmailBanner/>
 
