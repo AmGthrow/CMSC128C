@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeroShot.css'
+import './MainBanner.css'
 import logo_textless from '../../assets/logo_textless.png'
 
 export default function HeroShot() {
