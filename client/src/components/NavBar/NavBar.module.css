@@ -1,0 +1,30 @@
+.container {
+  min-height: 8vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white-light);
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.logo {
+  width: 10%;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.item {
+  margin: 2em;
+  color: var(--yellow-bold);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-decoration: none;
+}

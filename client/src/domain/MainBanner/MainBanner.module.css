@@ -1,4 +1,5 @@
-.hero-shot-container {
+.container {
+  min-height: 85vh;
   background-image: url("../../assets/hero-bg.jpg");
   background-position: right center;
   background-repeat: no-repeat;
@@ -6,31 +7,35 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 83vh;
 }
 
 .content {
-  margin: 3em;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
+  margin: 5em;
 }
 
-.content #hero__logo {
-  width: 70%;
+.logo {
+  width: 327px;
 }
 
-.content h1 {
+.content .intro,
+.description {
+  text-align: end;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 0.5em;
   font-weight: 300;
-  font-size: 3.5vw;
-  padding-right: 1.5em;
+  font-size: 48px;
 }
 
-.content h3 {
-  color: #7b5828;
-  padding-top: 0.5em;
-  padding-right: 2.7em;
-  font-size: 2vw;
+.description {
+  color: var(--yellow-regular);
+  margin-top: 0.3em;
+  font-size: 28px;
   font-weight: 400;
 }
