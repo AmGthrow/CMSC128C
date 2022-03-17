@@ -5,4 +5,16 @@
   margin: 0;
   padding: 0;
   font-family: "Rubik", sans-serif;
+  --white-light: #ffffff;
+  --white-medium: #fff8df;
+  --yellow-light: #ffe895;
+  --yellow-bold: #ff7a00;
+  --yellow-medium: #bf5c00;
+  --yellow-semi-medium: #d36500;
+  --yellow-semi-regular: #f7ab48;
+  --yellow-regular: #7b5828;
+  --gray-regular: #313131;
+  --gray-medium: #282828;
+  --red-bold: #ca0014;
+  --border-yellow: rgba(228, 110, 0, 0.75);
 }
