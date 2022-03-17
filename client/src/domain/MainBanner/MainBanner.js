@@ -1,15 +1,27 @@
 import React from 'react'
-import './MainBanner.css'
+import MBCSS from './MainBanner.module.css'
 import logo_textless from '../../assets/logo_textless.png'
 
-export default function HeroShot() {
+function Logo () {
+  return <img className={MBCSS.logo} src={logo_textless} alt="Codercademy logo"></img>
+}
+
+function Greetings () {
+  return (
+    <>
+      <p className={MBCSS.intro}>We are <b>Codercademy</b></p>
+      <p className={MBCSS.description}>cultivating learning since 2020</p>
+    </>
+  )
+}
+
+export default function MainBanner() {
     return (
-      <div className='hero-shot-container'>
-          <div className="content">
-            <img src={logo_textless} id="hero__logo" alt="Codercademy logo"></img>
-            <h1>We are <b>Codercademy</b></h1>
-            <h3>cultivating learning since 2020</h3>
+      <div className={MBCSS.container}>
+          <div className={MBCSS.content}>
+            <Logo/>
+            <Greetings/>
           </div>
       </div>
     )
-  }
+}

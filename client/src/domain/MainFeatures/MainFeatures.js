@@ -1,33 +1,34 @@
 import React from 'react'
-import './MainFeatures.css'
+import MFCSS from './MainFeatures.module.css'
 
 function FeaturesItem ({feature}) {
     return (
-        <div className='item-container'>
-            <div className='item'>
-                <h3>{feature}</h3>
-                <div className='icon'></div>
-                <p className='item-description'>
+        <div className={MFCSS.feature_container}>
+            <div className={MFCSS.item}>
+                <p className={MFCSS.item_header}>{feature}</p>
+                <div className={MFCSS.icon}></div>
+                <p className={MFCSS.item_intro}>
                 Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit. 
                 Integer facilisis vestibulum 
                 ante at egestas. Pellentesque 
                 dolor massa, tristique id 
                 convallis at.</p>
-            </div>
+            </div> 
         </div>
     )
 }
 
 export default function MainFeatures() {
   return (
-    <div className='main-features-container'>
-        <div className='description'>
-            <h3>WHO WE ARE</h3>
-            <p>Codercademy is a [main description here: brief yet impactful]</p>
+    <div className={MFCSS.container}>
+        <div className={MFCSS.description}>
+            <p className={MFCSS.header}>WHO WE ARE</p>
+            <p className={MFCSS.intro}>Codercademy is a [main description here: brief yet impactful]</p>
         </div>
-        <p className='mf-message'>WHAT WE DO</p>
-        <div className='wrapper-items'> 
+
+        <p className={MFCSS.activities}>WHAT WE DO</p>
+        <div className={MFCSS.wrapper}> 
             <FeaturesItem feature={'Feature 1'}/>
             <FeaturesItem feature={'Feature 2'}/>
             <FeaturesItem feature={'Feature 3'}/>
