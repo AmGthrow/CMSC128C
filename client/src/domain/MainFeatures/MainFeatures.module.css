@@ -9,7 +9,7 @@
 }
 
 .header {
-  color: #ff7a00;
+  color: var(--yellow-bold);
   font-size: 30px;
   font-weight: 600;
   line-height: 36px;
