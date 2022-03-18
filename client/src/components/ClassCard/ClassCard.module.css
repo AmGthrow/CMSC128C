@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  margin-bottom: 36px;
+  width: 100%;
+  height: 249px;
+  border: 4px solid var(--border-yellow);
+  border-radius: 30px;
+  color: var(--orange-medium);
+  overflow: hidden;
+}
+
+.title_desc {
+  width: 80%;
+  padding: 1.5em;
+  overflow: hidden;
+}
+
+.title_desc > h6 {
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 25px;
+}
+
+.title_desc > p {
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gray-medium);
+}
+
+.days_time {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border-left: 4px solid var(--border-yellow);
+  font-size: 28px;
+  line-height: 33px;
+  padding: 1.5em;
+}
