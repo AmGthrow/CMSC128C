@@ -50,14 +50,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-.item_header {
+.feature_container > h1 {
   color: var(--gray-medium);
-  font-size: 30px;
   font-weight: 500;
-  line-height: 35.55px;
+}
+
+.feature_container > p {
+  font-size: 1.2em;
   text-align: center;
+  color: var(--gray-medium);
 }
 
 .icon {
@@ -67,12 +71,4 @@
   height: 196px;
   margin-top: 33px;
   margin-bottom: 33px;
-}
-
-.item_intro {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: var(--gray-medium);
 }
