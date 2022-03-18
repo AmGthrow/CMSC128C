@@ -34,10 +34,8 @@ export default function MainFeatures() {
 
     return (
         <div className={MFCSS.container}>
-            <div className={MFCSS.description}>
-                <p className={MFCSS.header}>WHO WE ARE</p>
-                <p className={MFCSS.intro}>Codercademy is a [main description here: brief yet impactful]</p>
-            </div>
+            <h1>WHO WE ARE</h1>
+            <p>Codercademy is a [main description here: brief yet impactful]</p>
 
             <p className={MFCSS.activities}>WHAT WE DO</p>
             <div className={MFCSS.wrapper}>

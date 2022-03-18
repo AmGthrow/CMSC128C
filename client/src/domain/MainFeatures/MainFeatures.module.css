@@ -2,21 +2,18 @@
   background-color: var(--white-medium);
   padding-top: 72px;
   padding-bottom: 199px;
-}
-
-.description {
   text-align: center;
 }
 
-.header {
+.container h1 {
   color: var(--yellow-bold);
   font-size: 30px;
   font-weight: 600;
   line-height: 36px;
+  margin-bottom: 29px;
 }
 
-.intro {
-  margin-top: 29px;
+.container p {
   color: var(--gray-regular);
   font-size: 24px;
   font-weight: 400;
