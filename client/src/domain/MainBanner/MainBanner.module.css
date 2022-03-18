@@ -1,20 +1,15 @@
+/* align to center by default for mobile-first rendering */
 .container {
   min-height: 85vh;
   background-image: url("../../assets/hero-bg.jpg");
   background-position: right center;
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.content {
-  display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 50%;
-  margin: 5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
 }
 
 .logo {
