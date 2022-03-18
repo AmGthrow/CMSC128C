@@ -23,7 +23,7 @@
   line-height: 28px;
 }
 
-.wrapper {
+.features {
   display: flex;
   gap: 56px;
   flex-wrap: wrap;
