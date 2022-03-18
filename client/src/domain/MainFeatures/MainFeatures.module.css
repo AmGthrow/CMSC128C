@@ -35,10 +35,10 @@
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 372px);
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-gap: 56px;
 }
 
 .feature_container {
