@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './EmailInputField.css'
+import EFCSS from './EmailInputField.module.css'
 import {saveEmailAddress} from '../../../api/FetchLogic/saveEmailAddress'
 
 export default function EmailInputField() {
@@ -22,15 +22,18 @@ export default function EmailInputField() {
   }
 
   return (
-    <div className='input-field-container'>
-      <form onSubmit={handleSubmit}>
+    <div className={EFCSS.container}>
+      <form className={EFCSS.form} onSubmit={handleSubmit}>
           <input 
+            className={EFCSS.input}
             value={emailAddress}
             type='email'
             onChange={handleChange}
             placeholder='jdelacruz@gmail.com'/>
-          <button type='submit'>
-            <p className='button-text'>Send</p>
+          <button 
+            className={EFCSS.btn}
+            type='submit'>
+            Send
           </button>
       </form>
     </div>

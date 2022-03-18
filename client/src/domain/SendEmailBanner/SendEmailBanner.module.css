@@ -1,13 +1,13 @@
-.enroll-now-container {
+.container {
   height: 65vh;
-  background-color: #ffe895;
+  background-color: var(--yellow-light);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.en-content {
+.content {
   display: flex;
   align-items: center;
   width: 100%;
@@ -17,27 +17,26 @@
   margin-right: 98px;
 }
 
-.email-input-container {
+.email_input_container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.email-input-container .message-1 {
+.msg_1 {
   font-weight: 800;
   font-size: 64px;
   line-height: 75.84px;
-  color: #ca0014;
+  color: var(--red-bold);
 }
-
-.email-input-container .message-2 {
+.msg_2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #bf5c00;
+  color: var(--yellow-medium);
 }
 
-.index-finger-container {
+.finger_container {
   display: flex;
   align-items: center;
   width: 100%;
@@ -46,6 +45,6 @@
   bottom: 0.5em;
 }
 
-.index-finger-container img {
+.finger {
   width: 135%;
 }
