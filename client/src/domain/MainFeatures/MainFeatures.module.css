@@ -1,3 +1,4 @@
+/* Global container  */
 .container {
   background-color: var(--white-medium);
   padding-top: 72px;
@@ -5,7 +6,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 100px; /*gap between each section in the container */
 }
 
 .container h1 {
@@ -23,6 +24,7 @@
   line-height: 28px;
 }
 
+/* container for the "features" subsection */
 .features {
   display: flex;
   gap: 56px;
@@ -30,6 +32,7 @@
   justify-content: center;
 }
 
+/* container for individual features */
 .feature_container {
   border: 4px solid rgba(228, 110, 0, 0.75);
   border-radius: 30px;
@@ -53,7 +56,7 @@
   color: var(--gray-medium);
 }
 
-.icon {
+.feature_container > .icon {
   border: 3px dashed var(--border-yellow);
   border-radius: 50%;
   width: 196px;
