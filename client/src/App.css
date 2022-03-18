@@ -13,8 +13,10 @@
   --yellow-semi-medium: #d36500;
   --yellow-semi-regular: #f7ab48;
   --yellow-regular: #7b5828;
+  --orange-light: #ffbe83;
+  --orange-medium: rgba(228, 110, 0, 0.75);
   --gray-regular: #313131;
   --gray-medium: #282828;
   --red-bold: #ca0014;
-  --border-yellow: rgba(228, 110, 0, 0.75);
+  --border-yellow: var(--orange-medium);
 }
