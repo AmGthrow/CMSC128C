@@ -33,6 +33,13 @@
   .logo{
     width: 240px;
   }
+  
+  /* align right on larger screens */
+  .container{
+    padding-right: 80px;
+    text-align: right;
+    align-items: flex-end;
+  }
 
   .description{
     font-size: 2em;
