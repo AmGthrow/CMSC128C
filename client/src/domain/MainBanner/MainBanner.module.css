@@ -1,41 +1,58 @@
+/* align to center by default for mobile-first rendering */
 .container {
   min-height: 85vh;
   background-image: url("../../assets/hero-bg.jpg");
   background-position: right center;
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.content {
-  display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 50%;
-  margin: 5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
 }
 
 .logo {
-  width: 327px;
-}
-
-.content .intro,
-.description {
-  text-align: end;
-  width: 100%;
+  width: 200px;
 }
 
 .intro {
   margin-top: 0.5em;
   font-weight: 300;
-  font-size: 48px;
+  font-size: 2.3em;
 }
 
 .description {
   color: var(--yellow-regular);
   margin-top: 0.3em;
-  font-size: 28px;
+  font-size: 1.5em;
   font-weight: 400;
 }
+
+@media screen and (min-width: 768px){
+  .logo{
+    width: 240px;
+  }
+  
+  /* align right on larger screens */
+  .container{
+    padding-right: 80px;
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .description{
+    font-size: 2em;
+  }
+  .intro{
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .logo{
+    width: 360px;
+  }
+}
+
+
