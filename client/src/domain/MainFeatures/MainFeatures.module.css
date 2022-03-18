@@ -47,17 +47,9 @@
   width: 372px;
   height: 519px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.item {
-  width: 282px;
-  height: 447px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item_header {

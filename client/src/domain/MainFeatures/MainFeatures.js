@@ -17,11 +17,9 @@ const featuresData = [{
 function FeaturesItem({ title, desc }) {
     return (
         <div className={MFCSS.feature_container}>
-            <div className={MFCSS.item}>
-                <p className={MFCSS.item_header}>{title}</p>
-                <div className={MFCSS.icon}></div>
-                <p className={MFCSS.item_intro}>{desc}</p>
-            </div>
+            <p className={MFCSS.item_header}>{title}</p>
+            <div className={MFCSS.icon}></div>
+            <p className={MFCSS.item_intro}>{desc}</p>
         </div>
     )
 }
