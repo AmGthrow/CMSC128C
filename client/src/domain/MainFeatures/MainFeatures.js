@@ -13,19 +13,15 @@ const featuresData = [{
     title: "Feature 3",
     desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at."
 }]
+
+function FeaturesItem({ title, desc }) {
     return (
         <div className={MFCSS.feature_container}>
             <div className={MFCSS.item}>
-                <p className={MFCSS.item_header}>{feature}</p>
+                <p className={MFCSS.item_header}>{title}</p>
                 <div className={MFCSS.icon}></div>
-                <p className={MFCSS.item_intro}>
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. 
-                Integer facilisis vestibulum 
-                ante at egestas. Pellentesque 
-                dolor massa, tristique id 
-                convallis at.</p>
-            </div> 
+                <p className={MFCSS.item_intro}>{desc}</p>
+            </div>
         </div>
     )
 }
