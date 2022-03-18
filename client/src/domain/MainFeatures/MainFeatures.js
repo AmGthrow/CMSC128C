@@ -17,9 +17,11 @@ const featuresData = [{
 function FeaturesItem({ title, desc }) {
     return (
         <div className={MFCSS.feature_container}>
-            <h1>{title}</h1>
-            <div className={MFCSS.icon}></div>
-            <p>{desc}</p>
+            <div className={MFCSS.item}>
+                <p className={MFCSS.item_header}>{title}</p>
+                <div className={MFCSS.icon}></div>
+                <p className={MFCSS.item_intro}>{desc}</p>
+            </div>
         </div>
     )
 }
@@ -34,17 +36,15 @@ export default function MainFeatures() {
 
     return (
         <div className={MFCSS.container}>
-            <section>
-                <h1>WHO WE ARE</h1>
-                <p>Codercademy is a [main description here: brief yet impactful]</p>
-            </section>
+            <div className={MFCSS.description}>
+                <p className={MFCSS.header}>WHO WE ARE</p>
+                <p className={MFCSS.intro}>Codercademy is a [main description here: brief yet impactful]</p>
+            </div>
 
-            <section>
-                <h1>WHAT WE DO</h1>
-                <div className={MFCSS.features}>
-                    {features}
-                </div>
-            </section>
+            <p className={MFCSS.activities}>WHAT WE DO</p>
+            <div className={MFCSS.wrapper}>
+                {features}
+            </div>
         </div>
     )
 }
