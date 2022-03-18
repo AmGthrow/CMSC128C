@@ -27,19 +27,24 @@ function FeaturesItem({ title, desc }) {
 }
 
 export default function MainFeatures() {
-  return (
-    <div className={MFCSS.container}>
-        <div className={MFCSS.description}>
-            <p className={MFCSS.header}>WHO WE ARE</p>
-            <p className={MFCSS.intro}>Codercademy is a [main description here: brief yet impactful]</p>
-        </div>
+    // Generate list of all features
+    const features = featuresData.map((featureData) =>
+        <FeaturesItem
+            title={featureData.title}
+            desc={featureData.desc}
+        ></FeaturesItem>)
 
-        <p className={MFCSS.activities}>WHAT WE DO</p>
-        <div className={MFCSS.wrapper}> 
-            <FeaturesItem feature={'Feature 1'}/>
-            <FeaturesItem feature={'Feature 2'}/>
-            <FeaturesItem feature={'Feature 3'}/>
+    return (
+        <div className={MFCSS.container}>
+            <div className={MFCSS.description}>
+                <p className={MFCSS.header}>WHO WE ARE</p>
+                <p className={MFCSS.intro}>Codercademy is a [main description here: brief yet impactful]</p>
+            </div>
+
+            <p className={MFCSS.activities}>WHAT WE DO</p>
+            <div className={MFCSS.wrapper}>
+                {features}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
