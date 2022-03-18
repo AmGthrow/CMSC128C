@@ -40,7 +40,7 @@ export default function MainFeatures() {
             </section>
 
             <section>
-                <h1 className={MFCSS.activities}>WHAT WE DO</h1>
+                <h1>WHAT WE DO</h1>
                 <div className={MFCSS.wrapper}>
                     {features}
                 </div>
