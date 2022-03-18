@@ -1,7 +1,18 @@
 import React from 'react'
 import MFCSS from './MainFeatures.module.css'
 
-function FeaturesItem ({feature}) {
+const featuresData = [{
+    title: "Feature 1",
+    desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at."
+},
+{
+    title: "Feature 2",
+    desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at."
+},
+{
+    title: "Feature 3",
+    desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at."
+}]
     return (
         <div className={MFCSS.feature_container}>
             <div className={MFCSS.item}>
