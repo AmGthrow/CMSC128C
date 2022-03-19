@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
  * @swagger
  * /api/waitlist:
  *   post:
- *     description: Return a sample waitlist form to input an email
+ *     description: Store a client's email into the waitlist
  *     parameters:
  *       - name: email
  *         description: Client's email address
