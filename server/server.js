@@ -25,5 +25,6 @@ app.post("/api/waitlist", (req, res) => {
     const email = req.body.email;
     addToWaitlist(email);
     console.log(`Client ${email} added to waitlist`);
+    res.sendStatus(201);
 })
 
