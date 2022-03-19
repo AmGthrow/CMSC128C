@@ -1,7 +1,20 @@
 const express = require('express');
+const swaggerUi = require('swagger-ui-express');
+const swaggerJsDoc = require('swagger-jsdoc');
 const { addToWaitlist } = require('./spreadsheet');
 const app = express();
 
+const swaggerOptions = {
+    swaggerDefinition: {
+        info: {
+            title: 'Codercademy API',
+            'version': '1.0.0'
+        }
+    },
+    apis: ['server.js']
+};
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
 
 app.listen(9000, () =>
     console.log("Listening on port 9000")
@@ -12,6 +25,8 @@ app.use(
         extended: true
     })
 )
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
 app.use(express.json())
 
