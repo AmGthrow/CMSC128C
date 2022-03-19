@@ -36,6 +36,21 @@ app.get('/', (req, res) => {
     console.log("User connected")
 })
 
+/**
+ * @swagger
+ * /api/waitlist:
+ *   post:
+ *     description: Return a sample waitlist form to input an email
+ *     parameters:
+ *       - name: email
+ *         description: Client's email address
+ *         in: formData
+ *         required: true
+ *         type: string
+ *     responses: 
+ *       200:
+ *         description: Success
+ */
 app.post("/api/waitlist", (req, res) => {
     const email = req.body.email;
     addToWaitlist(email);
