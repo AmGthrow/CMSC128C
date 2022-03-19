@@ -50,11 +50,18 @@ app.get('/', (req, res) => {
  *     responses: 
  *       200:
  *         description: Success
+ *       400:
+ *         description: Email parameter is missing
  */
 app.post("/api/waitlist", (req, res) => {
     const email = req.body.email;
+    if (!email) {
+        res.status(400).send("email parameter is required");
+        return;
+    }
+
     addToWaitlist(email);
     console.log(`Client ${email} added to waitlist`);
-    res.sendStatus(201);
+    res.status(201).send(`Added ${email} to waitlist`)
 })
 
