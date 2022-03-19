@@ -4,6 +4,7 @@ const swaggerJsDoc = require('swagger-jsdoc');
 const { addToWaitlist } = require('./spreadsheet');
 const app = express();
 
+// Config for API documentation
 const swaggerOptions = {
     swaggerDefinition: {
         info: {
@@ -26,6 +27,7 @@ app.use(
     })
 )
 
+// Serve documentation for API endpoints on /api-docs
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
 app.use(express.json())
