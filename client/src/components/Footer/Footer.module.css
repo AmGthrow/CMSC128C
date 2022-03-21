@@ -8,14 +8,10 @@
   padding-bottom: 40px;
 }
 
-.logo {
-  min-width: 80%;
-  display: flex;
-}
-
 #footer_logo {
   border-right: 2px solid var(--white-light);
-  height: 100px;
+  min-width: 100px;
+  max-width: 40%;
 }
 
 .social_media_container {
