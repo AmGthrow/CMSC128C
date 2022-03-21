@@ -1,5 +1,4 @@
 .container {
-  height: 35vh;
   width: 100%;
   background-color: var(--yellow-semi-regular);
   display: flex;
