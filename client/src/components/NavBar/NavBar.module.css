@@ -4,6 +4,7 @@
   background-color: var(--white-light);
   padding-left: 2em;
   padding-right: 2em;
+  overflow: auto;
 }
 
 .logo {
@@ -23,4 +24,5 @@
   font-weight: 500;
   line-height: 19px;
   text-decoration: none;
+  white-space: nowrap;
 }
