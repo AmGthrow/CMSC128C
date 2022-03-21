@@ -8,15 +8,6 @@
   padding-bottom: 40px;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
 .logo {
   min-width: 80%;
   display: flex;
