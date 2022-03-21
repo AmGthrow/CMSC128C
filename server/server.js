@@ -49,9 +49,14 @@ app.get('/', (req, res) => {
  *     parameters:
  *       - name: email
  *         description: Client's email address
- *         in: formData
- *         required: true
- *         type: string
+ *         in: body
+ *         schema:
+ *           type: object
+ *           required:
+ *             - email
+ *           properties:
+ *             email:
+ *               type: string
  *     responses: 
  *       200:
  *         description: Success
