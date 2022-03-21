@@ -1,50 +1,22 @@
 .container {
-  height: 35vh;
   width: 100%;
   background-color: var(--yellow-semi-regular);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.logo {
-  min-width: 80%;
-  display: flex;
-}
-
-.logo_container {
-  margin-left: 4.5em;
-}
-
-.img {
-  width: 90%;
-}
-
-.divider {
-  border-left: 3px solid var(--white-light);
-  width: 100%;
+#footer_logo {
+  border-right: 2px solid var(--white-light);
+  min-width: 100px;
+  max-width: 40%;
 }
 
 .social_media_container {
   min-width: 20%;
   margin-right: 30px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sm_content {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
