@@ -15,12 +15,10 @@ function SocialMediaLinks() {
 
 function Logo() {
   return (
-    <div className={FCSS.logo_container}>
-      <img
-        className={FCSS.img}
-        src={require('../../assets/footer-logo.png')}
-        alt='footer logo' />
-    </div>
+    <img
+      id={FCSS.footer_logo}
+      src={require('../../assets/footer-logo.png')}
+      alt='footer logo' />
   )
 }
 
