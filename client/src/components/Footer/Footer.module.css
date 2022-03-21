@@ -18,12 +18,6 @@
   min-width: 20%;
   margin-right: 30px;
   display: flex;
-  justify-content: flex-end;
-}
-
-.sm_content {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
