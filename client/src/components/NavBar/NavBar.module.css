@@ -1,7 +1,3 @@
-.container {
-  min-height: 8vh;
-}
-
 .content {
   display: flex;
   justify-content: space-between;
