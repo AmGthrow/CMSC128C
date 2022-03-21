@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/CMSC128C/static/css/main.18c99449.css",
-    "main.js": "/CMSC128C/static/js/main.5f8c0c97.js",
+    "main.css": "/CMSC128C/static/css/main.1347c5f0.css",
+    "main.js": "/CMSC128C/static/js/main.de93f7fa.js",
     "static/media/hero-bg.jpg": "/CMSC128C/static/media/hero-bg.d8e8e1532ad902ab1b1d.jpg",
     "static/media/index-finger-point.png": "/CMSC128C/static/media/index-finger-point.765828e35021f09919de.png",
     "static/media/nav-bar-logo.png": "/CMSC128C/static/media/nav-bar-logo.e1dfa8d5984ae00fbf5d.png",
     "static/media/logo_textless.png": "/CMSC128C/static/media/logo_textless.7a94439b1366ff9bf0a1.png",
     "static/media/footer-logo.png": "/CMSC128C/static/media/footer-logo.34eaadcc0ea6dff92f6c.png",
     "index.html": "/CMSC128C/index.html",
-    "main.18c99449.css.map": "/CMSC128C/static/css/main.18c99449.css.map",
-    "main.5f8c0c97.js.map": "/CMSC128C/static/js/main.5f8c0c97.js.map"
+    "main.1347c5f0.css.map": "/CMSC128C/static/css/main.1347c5f0.css.map",
+    "main.de93f7fa.js.map": "/CMSC128C/static/js/main.de93f7fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.18c99449.css",
-    "static/js/main.5f8c0c97.js"
+    "static/css/main.1347c5f0.css",
+    "static/js/main.de93f7fa.js"
   ]
 }
