@@ -3,6 +3,9 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const { addToWaitlist } = require('./spreadsheet');
 const app = express();
+const cors = require('cors')
+
+app.use(cors());
 
 // Config for API documentation
 const swaggerOptions = {
