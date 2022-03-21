@@ -29,11 +29,7 @@ export default function Footer() {
     <div className={FCSS.container}>
 
       {/* logo */}
-      <div className={FCSS.logo}>
-        <Logo />
-        {/* divider */}
-        <div className={FCSS.divider}></div>
-      </div>
+      <Logo />
 
       {/* social media links */}
       <div className={FCSS.social_media_container}>
