@@ -1,8 +1,5 @@
 const router = require('express').Router()
-const { sendData, saveToWaitlist } = require('../controller/sendData')
-
-
-router.get('/sample', sendData)
+const { saveToWaitlist } = require('../controller/waitlist')
 
 /**
  * @swagger

@@ -1,10 +1,6 @@
 // require from the model
 const { addToWaitlist } = require('../database/spreadsheet');
 
-exports.sendData = async function (req, res, next) {
-    res.send({ 'message': 'ok' })
-}
-
 exports.saveToWaitlist = (req, res) => {
     const email = req.body.email;
     if (!email) {
