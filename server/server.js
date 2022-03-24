@@ -18,15 +18,13 @@ app.use(
         extended: true
     })
 )
-app.use(express.json())
-app.use('/api', router) // router: base
 
 // Config for API documentation
 const swaggerOptions = {
     swaggerDefinition: {
         info: {
             title: 'Codercademy API',
-            'version': '1.0.0'
+            'version': '2.0.0'
         }
     },
     apis: ['./route/router.js']
@@ -35,7 +33,10 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 
 // Serve documentation for API endpoints on /api-docs
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+
+app.use(express.json())
+app.use('/api', router) // router: base
 
 /* listen to the port */
 app.listen(port, () => console.log(`Listening on port ${port}`))
