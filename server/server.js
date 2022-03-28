@@ -4,6 +4,9 @@ const router = require('./route/router')
 const express = require('express')
 const { swaggerServe, swaggerSetup } = require('./middleware/swaggerDocs.middleware')
 
+// load database 
+require('./database/connection')
+
 /* *set up app */
 const app = express()
 
@@ -12,11 +15,7 @@ const port = process.env.PORT || 8000
 
 /* configure app */
 app.use(cors({ origin: '*' }))  //temporary: let any url to access this port 
-app.use(
-    express.urlencoded({
-        extended: true
-    })
-)
+app.use( express.urlencoded({ extended: true }) )
 
 // Serve documentation for API endpoints on /api-docs
 app.use('/api/docs', swaggerServe, swaggerSetup)
