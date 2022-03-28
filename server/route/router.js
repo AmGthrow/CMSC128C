@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const { saveToWaitlist } = require('../controller/waitlist')
 const { addTransaction } = require('../controller/addTransaction')
+const { getTransactions } = require('../controller/getTransactions')
 
 /**
  * @swagger
@@ -27,5 +28,7 @@ const { addTransaction } = require('../controller/addTransaction')
 router.post("/waitlist", saveToWaitlist)
 
 router.post("/transaction", addTransaction) // need pa sya og validation middleware
+
+router.get("/all-transactions", getTransactions) 
 
 module.exports = router
