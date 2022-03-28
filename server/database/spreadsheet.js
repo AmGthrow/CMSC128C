@@ -14,6 +14,7 @@ async function addToWaitlist(email, name = "") {
     const sheet = doc.sheetsByTitle['Waitlist']
 
     sheet.addRow({
+        "Timestamp": new Date().toLocaleString(),
         "Email": email,
         "Name": name
     })
