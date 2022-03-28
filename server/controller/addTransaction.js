@@ -2,7 +2,7 @@ const Transaction = require('../model/transactionSchema')
 
 
 
-exports.addTransaction = async function (req, res, next) {
+exports.addTransaction = async function (req, res) {
 
     const {type, amount, name} = req.body
     
