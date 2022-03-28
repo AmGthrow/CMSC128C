@@ -36,15 +36,3 @@
   color: var(--yellow-medium);
 }
 
-.finger_container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  left: 2.5em;
-  bottom: 0.5em;
-}
-
-.finger {
-  width: 135%;
-}
