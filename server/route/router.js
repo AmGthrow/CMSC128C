@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const { saveToWaitlist } = require('../controller/waitlist')
+const { addTransaction } = require('../controller/addTransaction')
 
 /**
  * @swagger
@@ -24,5 +25,7 @@ const { saveToWaitlist } = require('../controller/waitlist')
  *         description: Email parameter is missing
  */
 router.post("/waitlist", saveToWaitlist)
+
+router.post("/transaction", addTransaction) // need pa sya og validation middleware
 
 module.exports = router
