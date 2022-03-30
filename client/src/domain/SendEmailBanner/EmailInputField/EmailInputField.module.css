@@ -9,7 +9,7 @@
 }
 
 .input {
-  width: 100%;
+  width: 40%;
   border: hidden;
   border-radius: 15px;
   padding-left: 15px;
@@ -23,9 +23,9 @@
 
 .btn {
   background-color: var(--yellow-semi-medium);
-  width: 20%;
-  height: 41px;
-  margin-left: 16px;
+  width: 12%;
+  height: 50px;
+  margin-left: 20px;
   border: hidden;
   border-radius: 15px;
   color: #ffffff;

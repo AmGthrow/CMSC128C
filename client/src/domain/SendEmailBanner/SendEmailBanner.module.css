@@ -13,8 +13,8 @@
   width: 100%;
   margin-top: 70px;
   margin-bottom: 70px;
-  margin-left: 98px;
-  margin-right: 98px;
+  margin-left: 15%;
+  margin-right: 25%;
 }
 
 .email_input_container {
@@ -36,15 +36,3 @@
   color: var(--yellow-medium);
 }
 
-.finger_container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  left: 2.5em;
-  bottom: 0.5em;
-}
-
-.finger {
-  width: 135%;
-}
