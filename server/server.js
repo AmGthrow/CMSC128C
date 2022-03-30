@@ -5,6 +5,9 @@ const express = require('express')
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 
+// load database 
+require('./database/connection')
+
 /* *set up app */
 const app = express()
 
