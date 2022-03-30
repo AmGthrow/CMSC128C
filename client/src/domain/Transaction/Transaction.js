@@ -12,6 +12,7 @@ export default function Transaction() {
         <TransactionContext.Provider value={value}>
             <Flex w='80%' alignItems='center' justifyContent='center' p='6em' flexDir='column' > 
                 <TransactionTable />
+                <Pagination/>
             </Flex>
         </TransactionContext.Provider>
     )
@@ -51,5 +52,31 @@ function TableBody ({data}) {
                 {Object.values(data).map((key, index) => { return <Td key={index}> {key} </Td>})}
             </Tr>
         </Tbody>
+    )
+}
+
+function Pagination () {
+
+    const { pagination } = useContext(TransactionContext)
+
+    return( 
+        pagination.length  > 1 && (
+            <Flex>
+                {pagination.map((_, index) => <PaginationButton key={index} index={index} />)}
+            </Flex>
+        )
+    )
+}
+
+
+function PaginationButton ({index}){
+
+    const { fetchMoreTransactions } = useContext(TransactionContext)
+
+    return(
+        <Button
+            onClick={() => fetchMoreTransactions(index)}>
+            {index + 1}
+        </Button>
     )
 }
