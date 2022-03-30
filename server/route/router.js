@@ -27,7 +27,7 @@ const { getTransactions } = require('../controller/getTransactions')
  */
 router.post("/waitlist", saveToWaitlist)
 
-router.post("/transaction", addTransaction) // need pa sya og validation middleware
+router.post("/add-transactions", addTransaction) // need pa sya og validation middleware
 
 router.get("/all-transactions", getTransactions) 
 
