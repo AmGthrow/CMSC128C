@@ -9,6 +9,8 @@ exports.getTransactions =  async function (req, res) {
 
     if(!transactions) return res.json({error: 'No transactions'}) // if no return data then show error
 
+    const transactionCount = await Transaction.countDocuments() // get total transactions
+
     return res.json({ // return the data
         transactions : transactions.map(transaction => ({
             id: transaction._id,
@@ -16,5 +18,6 @@ exports.getTransactions =  async function (req, res) {
             amount: transaction.amount,
             name: transaction.name
         })),
+        transactionCount
     })
  }
