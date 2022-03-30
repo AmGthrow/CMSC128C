@@ -1,10 +1,10 @@
 import client from '../client'
 
-export const getTransactions =  async () => {
+export const getTransactions =  async (limit, pageNo) => {
 
     try {
 
-        const {data} = await client.get('/api/all-transactions')
+        const {data} = await client.get(`/api/all-transactions?limit=${limit}&pageNo=${pageNo}`)
 
         return data
 
