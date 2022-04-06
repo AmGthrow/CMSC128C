@@ -4,6 +4,9 @@ const router = require('./route/router')
 const express = require('express')
 const { swaggerServe, swaggerSetup } = require('./middleware/swaggerDocs.middleware')
 
+// load database 
+require('./database/connection')
+
 /* *set up app */
 const app = express()
 
