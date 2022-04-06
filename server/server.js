@@ -2,8 +2,7 @@ require('dotenv').config({ path: '.env' })
 const cors = require('cors')
 const router = require('./route/router')
 const express = require('express')
-const swaggerUi = require('swagger-ui-express');
-const swaggerJsDoc = require('swagger-jsdoc');
+const { swaggerServe, swaggerSetup } = require('./middleware/swaggerDocs.middleware')
 
 // load database 
 require('./database/connection')
@@ -22,21 +21,8 @@ app.use(
     })
 )
 
-// Config for API documentation
-const swaggerOptions = {
-    swaggerDefinition: {
-        info: {
-            title: 'Codercademy API',
-            'version': '2.0.0'
-        }
-    },
-    apis: ['./route/router.js']
-};
-
-const swaggerDocs = swaggerJsDoc(swaggerOptions);
-
 // Serve documentation for API endpoints on /api-docs
-app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+app.use('/api/docs', swaggerServe, swaggerSetup)
 
 app.use(express.json())
 app.use('/api', router) // router: base
