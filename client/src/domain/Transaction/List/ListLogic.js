@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import { getTransactions } from '../../api/FetchLogic/getTransactions'
+import { getTransactions } from '../../../api/FetchLogic/getTransactions'
 
 
 let pageNo = 0 
@@ -15,7 +15,7 @@ function getPagination(totalTransactionCount) {
 }
 
 
-export default function TransactionLogic() {
+export default function ListLogic() {
 
     const [transactions, setTransactions] = useState([])
 
