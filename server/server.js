@@ -15,16 +15,11 @@ const port = process.env.PORT || 8000
 
 /* configure app */
 app.use(cors({ origin: '*' }))  //temporary: let any url to access this port 
-app.use(
-    express.urlencoded({
-        extended: true
-    })
-)
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 // Serve documentation for API endpoints on /api-docs
 app.use('/api/docs', swaggerServe, swaggerSetup)
-
-app.use(express.json())
 app.use('/api', router) // router: base
 
 /* listen to the port */
