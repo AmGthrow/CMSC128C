@@ -1,1 +1,0 @@
-this folder holds the file that connects to the database
