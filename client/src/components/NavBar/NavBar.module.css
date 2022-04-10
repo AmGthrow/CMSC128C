@@ -1,14 +1,16 @@
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: var(--white-light);
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0.5em 2em;
+  /* padding-left: 2em;
+  padding-right: 2em; */
   overflow: auto;
 }
 
 .logo {
   width: 100px;
+  margin-right: auto;
 }
 
 .items {
@@ -26,3 +28,22 @@
   text-decoration: none;
   white-space: nowrap;
 }
+
+.button {
+  color: white;
+  background-color: var(--yellow-bold);
+  border-radius: 10px;
+  display: flex;
+  align-self: center;
+  padding: 0.5em 1.1em;
+  margin-left: 2em;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: var(--yellow-semi-medium);
+}
+

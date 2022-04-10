@@ -24,11 +24,16 @@ function Item({ to, value }) {
     return <NavLink className={NCSS.item} to={to}> {page} </NavLink>
 }
 
+function LogIn() {
+    return <button className={NCSS.button}>Log in</button>
+}
+
 export default function NavBar() {
     return (
         <div className={NCSS.content}>
             <Logo />
             <NavItems />
+            <LogIn />
         </div>
     )
 }
