@@ -2,6 +2,19 @@ import React from 'react'
 import NCSS from './NavBar.module.css'
 import nav_bar_logo from '../../assets/nav-bar-logo.png'
 import { NavLink } from 'react-router-dom'
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+    Button,
+    FormControl,
+    FormLabel,
+    Input,
+} from '@chakra-ui/react'
 
 function Logo() {
 
@@ -25,7 +38,34 @@ function Item({ to, value }) {
 }
 
 function LogIn() {
-    return <button className={NCSS.button}>Log in</button>
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    return <>
+
+        <button className={NCSS.button} onClick={onOpen}>Log in</button>
+
+        {/* Login modal */}
+        <Modal isOpen={isOpen} onClose={onClose} initialColorMode='light'>
+
+            <ModalOverlay />
+            <ModalContent>
+                <ModalCloseButton />
+                <ModalBody mt={6}>
+                    <FormControl >
+                        <FormLabel htmlFor='email'>Email address</FormLabel>
+                        <Input id='email' type='email' />
+                        <FormLabel htmlFor='password'>Password</FormLabel>
+                        <Input id='password' type='password' />
+                    </FormControl>
+                </ModalBody>
+
+                <ModalFooter>
+                    <Button mr={3} onClick={onClose} bg='orange.400' variant='with-shadow'>
+                        Log In
+                    </Button>
+                </ModalFooter>
+            </ModalContent>
+        </Modal>
+    </>
 }
 
 export default function NavBar() {
