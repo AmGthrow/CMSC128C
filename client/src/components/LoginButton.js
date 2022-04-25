@@ -19,10 +19,10 @@ export function Login() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [showPassword, setShowPassword] = useState(false)
     return <>
-        <Button bg='orange.400' onClick={onOpen}>Log in</Button>
+        <Button colorScheme='orange' onClick={onOpen}>Log in</Button>
 
         {/* Login modal */}
-        <Modal isOpen={isOpen} onClose={onClose} initialColorMode='light'>
+        <Modal isOpen={isOpen} onClose={onClose}>
 
             <ModalOverlay />
             <ModalContent>
@@ -43,8 +43,8 @@ export function Login() {
                 </ModalBody>
 
                 <ModalFooter>
-                    {/* TODO: This 'orange.400' is a default color from Chakra. The "correct" color for our palette is #FF7A00 but we haven't gotten around to setting up styling yet so this'll do for now */}
-                    <Button mr={3} onClick={onClose} bg='orange.400' variant='with-shadow'>
+                    {/* TODO: This 'orange' is a default color from Chakra. The "correct" color for our palette is #FF7A00 but we haven't gotten around to setting up styling yet so this'll do for now */}
+                    <Button mr={3} onClick={onClose} colorScheme='orange'>
                         Log In
                     </Button>
                 </ModalFooter>
