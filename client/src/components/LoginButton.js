@@ -15,8 +15,9 @@ import {
     InputRightElement,
 } from '@chakra-ui/react'
 import { validateLogin } from '../api/FetchLogic/validateLogin'
+import PropTypes from 'prop-types'
 
-export function Login() {
+export function Login({ setToken }) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [showPassword, setShowPassword] = useState(false)
     const [email, setEmail] = useState('')
@@ -25,7 +26,9 @@ export function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const response = await validateLogin(email, password)
-        alert(response)
+        // TODO: Send an "invalid user" if credentials are wrong
+        if (response.status == 200)
+            setToken(response.data.token)
     }
 
     return <>
@@ -61,4 +64,8 @@ export function Login() {
             </ModalContent>
         </Modal>
     </>
+}
+
+Login.propTypes = {
+    setToken: PropTypes.func.isRequired
 }

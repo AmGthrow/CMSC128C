@@ -1,3 +1,4 @@
+// TODO: Grab user data from the db instead
 // Sample database of users
 const USERS = [
     {
@@ -14,9 +15,10 @@ exports.validateLogin = async function (req, res) {
     const { username = '', password = '' } = req.query
 
     if (!checkCredentials(username, password))
-        return res.status(400).send("Invalid username or password")
+        return res.status(400).send({ "detail": "Invalid username or password" })
     else
-        return res.status(200).send("User authenticated")
+        // TODO: use a secure, randomly generated token
+        return res.status(200).send({ "token": "12345" })
 }
 
 function checkCredentials(username, password) {
