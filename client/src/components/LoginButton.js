@@ -14,10 +14,20 @@ import {
     InputGroup,
     InputRightElement,
 } from '@chakra-ui/react'
+import { validateLogin } from '../api/FetchLogic/validateLogin'
 
 export function Login() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [showPassword, setShowPassword] = useState(false)
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const response = await validateLogin(email, password)
+        alert(response)
+    }
+
     return <>
         <Button colorScheme='orange' onClick={onOpen}>Log in</Button>
 
@@ -30,11 +40,11 @@ export function Login() {
                 <ModalBody mt={6}>
                     <FormControl >
                         <FormLabel htmlFor='email'>Email address</FormLabel>
-                        <Input id='email' type='email' />
+                        <Input id='email' type='email' onChange={e => setEmail(e.target.value)} />
                         <FormLabel htmlFor='password'>Password</FormLabel>
                         <InputGroup>
 
-                            <Input id='password' type={showPassword ? 'text' : 'password'} />
+                            <Input id='password' type={showPassword ? 'text' : 'password'} onChange={e => setPassword(e.target.value)} />
                             <InputRightElement w='20%'><Button onClick={() => setShowPassword(!showPassword)} bg='none'>
                                 {showPassword ? 'Hide' : 'Show'}
                             </Button></InputRightElement>
@@ -44,7 +54,7 @@ export function Login() {
 
                 <ModalFooter>
                     {/* TODO: This 'orange' is a default color from Chakra. The "correct" color for our palette is #FF7A00 but we haven't gotten around to setting up styling yet so this'll do for now */}
-                    <Button mr={3} onClick={onClose} colorScheme='orange'>
+                    <Button onClick={handleSubmit} colorScheme='orange'>
                         Log In
                     </Button>
                 </ModalFooter>
