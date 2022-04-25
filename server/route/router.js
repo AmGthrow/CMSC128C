@@ -32,6 +32,6 @@ router.post("/add-transactions", addTransaction) // need pa sya og validation mi
 
 router.get("/all-transactions", getTransactions)
 
-router.get("/login", validateLogin)
+router.post("/login", validateLogin)
 
 module.exports = router

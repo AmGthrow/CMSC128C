@@ -26,7 +26,6 @@ export function Login({ setToken }) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const response = await validateLogin(email, password)
-        consol
         if (response.status == 200)
             setToken(response.data.token)
     }

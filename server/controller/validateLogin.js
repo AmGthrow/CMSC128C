@@ -12,7 +12,7 @@ const USERS = [
 ]
 exports.validateLogin = async function (req, res) {
 
-    const { username = '', password = '' } = req.query
+    const { username = '', password = '' } = req.body
 
     if (!checkCredentials(username, password))
         return res.status(400).send({ "detail": "Invalid username or password" })

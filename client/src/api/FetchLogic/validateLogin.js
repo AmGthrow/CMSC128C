@@ -1,9 +1,9 @@
 import client from '../client'
 
 export const validateLogin = async (username, password) => {
-    const params = { username, password }
+    const data = { username, password }
     try {
-        const response = await client.get('/api/login', { params })
+        const response = await client.post('/api/login', data)
         return response
 
     } catch (error) {
