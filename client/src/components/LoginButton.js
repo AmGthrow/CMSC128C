@@ -26,7 +26,7 @@ export function Login({ setToken }) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const response = await validateLogin(email, password)
-        // TODO: Send an "invalid user" if credentials are wrong
+        consol
         if (response.status == 200)
             setToken(response.data.token)
     }
