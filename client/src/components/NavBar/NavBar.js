@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import NCSS from './NavBar.module.css'
 import nav_bar_logo from '../../assets/nav-bar-logo.png'
 import { NavLink } from 'react-router-dom'
+import SmallScreen from './SmallScreen'
 
 function Logo() {
 
@@ -10,11 +11,11 @@ function Logo() {
 
 function NavItems() {
 
-    const path = [{ to: 'home', value: 'Home' }, { to: 'about us', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
+    const path = [{ to: '/', value: 'Home' }, { to: 'about', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
 
     const items = path.map(({ to, value }) => <li key={value}> <Item to={to} value={value} /> </li>)
 
-    return (<div><ul className={NCSS.items}>{items}</ul></div>)
+    return <ul className={NCSS.items}>{items}</ul>
 }
 
 function Item({ to, value }) {
@@ -24,13 +25,20 @@ function Item({ to, value }) {
     return <NavLink className={NCSS.item} to={to}> {page} </NavLink>
 }
 
-export default function NavBar() {
+
+function Desktop () {
     return (
         <div className={NCSS.container}>
-            <Logo />    
+            <Logo /> 
             <div className={NCSS.navitems}>
                 <NavItems />
-            </div>                      
+            </div> 
         </div>
     )
+}
+
+
+export default function NavBar({width, height}) {
+
+    return width > 790 ? <Desktop /> : <SmallScreen />
 }

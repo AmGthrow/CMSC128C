@@ -1,18 +1,28 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import MainBanner from '../domain/MainBanner/MainBanner'
 import MainFeatures from '../domain/MainFeatures/MainFeatures'
 import NavBar from '../components/NavBar/NavBar'
-import { Box } from '@chakra-ui/react'
 
 export default function LandingPage() {
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
+  const updateDimensions = () => {
+      setWidth(window.innerWidth);
+      setHeight(window.innerHeight);
+  }
+
+  useEffect(() => (window.onresize = updateDimensions), []);
+
   return (
     <div>
 
       {/* navbar */}
-      <NavBar/>
+      <NavBar width={width}/>
 
       {/* banners */}
-      <MainBanner/>
+      <MainBanner width={width}/>
 
       <MainFeatures/>
     </div>

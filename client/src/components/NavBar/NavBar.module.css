@@ -1,36 +1,35 @@
 .container {
-  overflow: auto;
+  overflow: hidden;
   position: fixed;
+  width: auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 1em;
+  width: 100%;
 }
 
 .navitems {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
-  margin-left: 5em;
-  padding-left: 25em;
 }
 
 .logo {
   width: 80px;
-  margin-left: 5em; 
-  margin-right: 10em;
+  margin-left: 7em;
 }
 
 .items {
   display: flex;
-  align-items: center;
   list-style: none;
+  margin-right: 5em;
 }
 
 .item {
   margin: 3em;
   font-size: 12px;
   font-weight: 600;
-  line-height: 19px;
-  text-decoration: none;
-  white-space: nowrap;
+}
+
+.item:hover {
+  color: #EE0017;
 }
