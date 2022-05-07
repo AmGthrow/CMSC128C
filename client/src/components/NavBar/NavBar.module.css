@@ -1,36 +1,36 @@
 .container {
-  overflow: auto;
   position: fixed;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+  color: white;
 }
 
-.navitems {
+.containerScrolled {
+  position: fixed;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
-  margin-left: 5em;
-  padding-left: 25em;
+  justify-content: space-between;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.5;
+  color:  white;
 }
 
 .logo {
   width: 80px;
-  margin-left: 5em; 
-  margin-right: 10em;
+  margin-left: 7em;
 }
 
 .items {
   display: flex;
-  align-items: center;
   list-style: none;
+  margin-right: 5em;
 }
 
 .item {
   margin: 3em;
   font-size: 12px;
   font-weight: 600;
-  line-height: 19px;
-  text-decoration: none;
-  white-space: nowrap;
 }
