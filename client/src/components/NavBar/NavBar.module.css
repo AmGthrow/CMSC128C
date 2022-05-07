@@ -1,16 +1,23 @@
-.content {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--white-light);
-  padding: 0.5em 2em;
-  /* padding-left: 2em;
-  padding-right: 2em; */
+.container {
   overflow: auto;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navitems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 5em;
+  padding-left: 25em;
 }
 
 .logo {
-  width: 100px;
-  margin-right: auto;
+  width: 80px;
+  margin-left: 5em; 
+  margin-right: 10em;
 }
 
 .items {
@@ -20,30 +27,10 @@
 }
 
 .item {
-  margin: 2em;
-  color: var(--yellow-bold);
+  margin: 3em;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 19px;
   text-decoration: none;
   white-space: nowrap;
 }
-
-.button {
-  color: white;
-  background-color: var(--yellow-bold);
-  border-radius: 10px;
-  display: flex;
-  align-self: center;
-  padding: 0.5em 1.1em;
-  margin-left: 2em;
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.button:hover {
-  background-color: var(--yellow-semi-medium);
-}
-
