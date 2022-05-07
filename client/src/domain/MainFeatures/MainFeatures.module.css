@@ -33,4 +33,6 @@
 
 .feature_container > img {
   max-width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

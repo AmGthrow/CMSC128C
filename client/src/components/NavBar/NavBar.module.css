@@ -13,14 +13,16 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: gray;
-  opacity: 0.5;
+  background-color: #FF9F47;
+  opacity: 1;
   color:  white;
+  transition: 0.75s all;
 }
 
 .logo {
   width: 80px;
   margin-left: 7em;
+  margin-bottom: 0.5em;
 }
 
 .items {
@@ -33,4 +35,8 @@
   margin: 3em;
   font-size: 12px;
   font-weight: 600;
+}
+
+.item:hover {
+  color: red;
 }

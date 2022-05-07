@@ -8,7 +8,7 @@ const featuresData = [{
     title: "Feature 1",
     desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at.",
     color: "#0191CB",
-    image: kids1
+    image: kids3
 },
 {
     title: "Feature 2",
@@ -20,7 +20,7 @@ const featuresData = [{
     title: "Feature 3",
     desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at.",
     color: "#E55454",
-    image: kids3
+    image: kids1
 }]
 
 function FeaturesItem({ title, desc, color, image }) {
