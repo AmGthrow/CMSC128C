@@ -6,10 +6,11 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: right;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
+  padding-left: 48em;
+  padding-right: 8em;
 }
 
 .logo {
@@ -18,16 +19,24 @@
 
 .intro {
   margin-top: 0.5em;
-  font-weight: 300;
-  font-size: 2.3em;
-  color: #000;
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #EE0017;
+  line-height: .9em;
+}
+
+.since {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #EE0017;
+  margin-bottom: 1em;
 }
 
 .description {
-  color: var(--yellow-regular);
-  margin-top: 0.3em;
-  font-size: 1.5em;
-  font-weight: 400;
+  color: #424242;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 8em;
 }
 
 @media screen and (min-width: 768px){
@@ -37,16 +46,15 @@
   
   /* align right on larger screens */
   .container{
-    padding-right: 80px;
     text-align: right;
     align-items: flex-end;
   }
 
   .description{
-    font-size: 2em;
+    font-size: 14px;
   }
   .intro{
-    font-size: 2.7em;
+    font-size: 3.5em;
   }
 }
 
