@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import NCSS from './NavBar.module.css'
 import nav_bar_logo from '../../assets/nav-bar-logo.png'
 import { NavLink } from 'react-router-dom'
@@ -26,19 +26,18 @@ function Item({ to, value }) {
 }
 
 
-function Desktop () {
+function Desktop ({scrolled}) {
+
     return (
-        <div className={NCSS.container}>
+        <div className={scrolled ? NCSS.containerScrolled : NCSS.container } >
             <Logo /> 
-            <div className={NCSS.navitems}>
-                <NavItems />
-            </div> 
+            <div> <NavItems /> </div> 
         </div>
     )
 }
 
 
-export default function NavBar({width, height}) {
+export default function NavBar({width, scrolled}) {
 
-    return width > 790 ? <Desktop /> : <SmallScreen />
+    return width > 790 ? <Desktop scrolled={scrolled}/> : <SmallScreen />
 }

@@ -1,16 +1,21 @@
 .container {
-  overflow: hidden;
   position: fixed;
-  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
   width: 100%;
+  color: white;
 }
 
-.navitems {
-  color: white;
+.containerScrolled {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: gray;
+  opacity: 0.5;
+  color:  white;
 }
 
 .logo {
@@ -28,8 +33,4 @@
   margin: 3em;
   font-size: 12px;
   font-weight: 600;
-}
-
-.item:hover {
-  color: #EE0017;
 }

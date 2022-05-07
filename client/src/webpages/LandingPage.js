@@ -5,26 +5,27 @@ import NavBar from '../components/NavBar/NavBar'
 
 export default function LandingPage() {
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(window.innerWidth)
+  const [scrolled, setScrolled] = useState(false)
 
-  const updateDimensions = () => {
-      setWidth(window.innerWidth);
-      setHeight(window.innerHeight);
-  }
-
-  useEffect(() => (window.onresize = updateDimensions), []);
+  const updateDimensions = () => setWidth(window.innerWidth)
+  const listenScrollEvent = () => window.scrollY > 10 ? setScrolled(true) : setScrolled(false)
+  
+  useEffect(() => {
+    window.onresize = updateDimensions
+    window.addEventListener("scroll", listenScrollEvent)
+  }, []);
 
   return (
     <div>
 
-      {/* navbar */}
-      <NavBar width={width}/>
-
-      {/* banners */}
+      <NavBar width={width} scrolled={scrolled}/>
+      
       <MainBanner width={width}/>
 
       <MainFeatures/>
     </div>
   )
 }
+
+
