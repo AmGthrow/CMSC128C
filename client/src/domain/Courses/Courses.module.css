@@ -28,9 +28,11 @@
     gap: 1em;
     justify-content: center;
 }
+
 .content {
     display: flex;
     justify-content: center;
+    margin-bottom: 4em;
 }
 
 .content > button {
