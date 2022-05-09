@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import MainBanner from '../domain/MainBanner/MainBanner'
 import MainFeatures from '../domain/MainFeatures/MainFeatures'
 import NavBar from '../components/NavBar/NavBar'
+import Courses from '../domain/Courses/Courses'
 
 export default function LandingPage() {
 
@@ -24,6 +25,8 @@ export default function LandingPage() {
       <MainBanner width={width}/>
 
       <MainFeatures/>
+
+      <Courses/>
     </div>
   )
 }

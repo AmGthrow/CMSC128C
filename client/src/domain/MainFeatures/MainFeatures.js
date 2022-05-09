@@ -8,7 +8,7 @@ const featuresData = [{
     title: "Feature 1",
     desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at.",
     color: "#0191CB",
-    image: kids1
+    image: kids3
 },
 {
     title: "Feature 2",
@@ -20,10 +20,13 @@ const featuresData = [{
     title: "Feature 3",
     desc: "Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer facilisis vestibulum ante at egestas.Pellentesque dolor massa, tristique id convallis at.",
     color: "#E55454",
-    image: kids3
+    image: kids1
 }]
 
-function FeaturesItem({ title, desc, color, image }) {
+function FeaturesItem({featureData}) {
+
+    const {title, desc, color, image} = featureData
+
     return (
         <div className={MFCSS.feature_container} style={{backgroundColor: color }}>
             <div className={MFCSS.description}>
@@ -37,8 +40,7 @@ function FeaturesItem({ title, desc, color, image }) {
 
 export default function MainFeatures () {
     // Generate list of all features
-    const features = featuresData.map((featureData) => 
-        <FeaturesItem title={featureData.title} desc={featureData.desc} color={featureData.color} image={featureData.image}/>)
+    const features = featuresData.map((featureData) =>  <FeaturesItem key={featureData.title} featureData = {featureData} />)
 
     return (
         <div className={MFCSS.features}>

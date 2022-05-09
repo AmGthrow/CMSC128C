@@ -3,7 +3,7 @@
   overflow: hidden;
   min-height: 85vh;
   background-image: url("../../assets/hero-bg.jpg");
-  background-position: right center;
+  background-position: 50% 44%;
   background-size: cover;
   display: flex;
   flex-direction: column;

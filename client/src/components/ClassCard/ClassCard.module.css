@@ -1,40 +1,50 @@
 .container {
+  width: 23.1em;
+  height: 11em;
+  background-color: #FF9F47;
   display: flex;
-  margin-bottom: 36px;
-  width: 100%;
-  min-height: 249px;
-  border: 4px solid var(--border-yellow);
-  border-radius: 30px;
-  color: var(--orange-medium);
-  overflow: hidden;
+  border-radius: 20px;
 }
 
-.title_desc {
-  width: 80%;
-  padding: 1.5em;
+.container:hover {
+  transform: scale(1.3);
+  transition: 0.25s;
+  transition-timing-function: ease-in;
+  z-index: 1;
 }
 
-.title_desc > h6 {
-  font-size: 36px;
-  line-height: 43px;
-  margin-bottom: 25px;
+.text {
+  color: white;
+  font-weight: 500;
+  padding: 1em;
 }
 
-.title_desc > p {
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--gray-medium);
+.text>h1 {
+  font-size: 1.1em;
 }
 
-.days_time {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  border-right: 4px solid var(--border-yellow);
-  font-size: 28px;
-  line-height: 33px;
-  padding: 1.5em;
+.text>p {
+  font-size: .6em;
+}
+
+.text>button {
+  border: .17em solid white;
+  border-radius: 7px;
+  font-size: 0.60em;
+  padding: 0.40em;
+  position: relative;
+  bottom: -1.5em;
+  right: -15em;
+}
+
+.text>button:hover {
+  background-color: #0191CB;
+}
+
+.container>img {
+  width: 7.7em; 
+  height: 11em; 
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
