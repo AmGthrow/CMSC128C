@@ -1,67 +1,59 @@
 /* align to center by default for mobile-first rendering */
 .container {
+  overflow: hidden;
   min-height: 85vh;
   background-image: url("../../assets/hero-bg.jpg");
-  background-position: right center;
+  background-position: 50% 44%;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: right;
   justify-content: center;
   text-align: center;
-  padding-left: 48em;
-  padding-right: 8em;
-}
-
-.logo {
-  width: 200px;
 }
 
 .intro {
-  margin-top: 0.5em;
   font-weight: 700;
-  font-size: 3.5em;
+  font-size: 1.5em;
   color: #EE0017;
-  line-height: .9em;
 }
 
 .since {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 0.5em;
   color: #EE0017;
-  margin-bottom: 1em;
+  font-weight: 700;
 }
 
 .description {
   color: #424242;
-  font-size: 14px;
+  font-size: 8px;
   font-weight: 600;
-  padding-left: 8em;
 }
 
 @media screen and (min-width: 768px){
-  .logo{
-    width: 240px;
-  }
-  
-  /* align right on larger screens */
+
+ 
   .container{
     text-align: right;
     align-items: flex-end;
+    padding-left: 48em;
+    padding-right: 8em;
   }
 
   .description{
     font-size: 14px;
+    padding-left: 8em;
   }
   .intro{
+    margin-top: 0.5em;
     font-size: 3.5em;
+    line-height: .9em;
+  }
+  .since {
+    font-size: 1.8em;
+    margin-bottom: 1em;
   }
 }
 
-@media screen and (min-width: 1024px){
-  .logo{
-    width: 360px;
-  }
-}
 
 
