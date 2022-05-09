@@ -1,17 +1,8 @@
 import React from 'react'
 import CCSS from './Courses.module.css'
 import ClassCard from '../../components/ClassCard/ClassCard'
-
-const classesData = [{
-  title: 'Code Meets World',
-  description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-},{
-  title: 'Code Meets World',
-  description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-},{
-  title: 'Code Meets World',
-  description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-}]
+import CoursesLogic from './CoursesLogic'
+import {GrFormPrevious, GrFormNext} from 'react-icons/gr'
 
 function Heading() {
     return (
@@ -22,22 +13,26 @@ function Heading() {
     )
 }
 
-function Courses() {
-  const classes = classesData.map((classData) =>
-  <ClassCard
-      key={classData.title}
-      classData={classData}
-  />
-)
-  
+function CoursesList ({data}) {
+
+  const d = data.map((da) => <ClassCard key={da.title} classData={da} />)
+
+  return <div className={CCSS.list}> {d} </div>
+}
+
+export default function Courses() {
+
+  const { fetchPrev, fetchNext, courses} = CoursesLogic()
+
   return (
     <>
         <Heading/>
-        <div className={CCSS.list}>
-          {classes}
+        <div className={CCSS.content}>
+        <button onClick={fetchPrev}> <GrFormPrevious/> </button>
+          <CoursesList data={courses} />
+          <button onClick={fetchNext}> <GrFormNext/> </button>
         </div>
     </>
   )
 }
 
-export default Courses
