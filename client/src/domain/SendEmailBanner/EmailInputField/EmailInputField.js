@@ -25,25 +25,26 @@ export default function EmailInputField() {
 
 
   return (
-  <div className={EFCSS.container}> <div className={EFCSS.email_page_container}>
+  <div className={EFCSS.container}> 
+    <div className={EFCSS.email_page_container}>
       <h1>Jump right into coding<br/> with Coderacademy!</h1>
       <p>To enroll, leave us your email,<br/> and we'll contact you</p>
-    <form className={EFCSS.form} onSubmit={handleSubmit}>
-        <input 
-          className={EFCSS.input}
-          value={emailAddress}
-          type='email'
-          onChange={handleChange}
-          placeholder='jdelacruz@gmail.com'/>
-        <button 
-          className={EFCSS.btn}
-          type='submit'>
-          Send
-        </button>
-    </form> 
-    </div><img className={EFCSS.pic} src={child} alt='kids' />
+      <form className={EFCSS.form} onSubmit={handleSubmit}>
+          <input 
+            className={EFCSS.input}
+            value={emailAddress}
+            type='email'
+            onChange={handleChange}
+            placeholder='jdelacruz@gmail.com'/>
+          <button 
+            className={EFCSS.btn}
+            type='submit'>
+            Send
+          </button>
+      </form> 
+    </div>
+    <img className={EFCSS.pic} src={child} alt='kids' />
   </div>
-   
-    
   )
 }
+
