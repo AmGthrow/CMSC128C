@@ -1,20 +1,19 @@
 import React from 'react'
-import CCSS from './ClassCard.module.css'
+import CardCSS from './ClassCard.module.css'
+import kids4  from '../../assets/kids4.jpg'
 
-export default function ClassCard({classData}) {
-  const {title, description, days, timeRange} = classData
-
+function ClassCard({classData}) {
+  const {title, description} = classData
   return (
-    <div className={CCSS.container}>
-      <section className={CCSS.days_time }>
-        {/* <h6>{days}</h6>
-        <h6>{timeRange}</h6> */}
-      </section>
-
-      <section className={CCSS.title_desc}>
-        <h6>{title}</h6>
-        <p> [Description] <br/> <br/> {description} </p>
-      </section>
+    <div className={CardCSS.container}>
+      <div className={CardCSS.text}>
+        <h1>{title}</h1>
+        <p><br/>{description}</p>
+        <button>View More</button>
+      </div>
+      <img src={kids4} alt='kids images'></img>
     </div>
   )
 }
+
+export default ClassCard
