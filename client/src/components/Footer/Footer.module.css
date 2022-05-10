@@ -1,6 +1,6 @@
 .container {
-  width: 100%;
-  background-color: var(--yellow-semi-regular);
+  max-width: 1170px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,12 +24,6 @@
   align-items: center;
 }
 
-.msg {
-  color: var(--white-light);
-  font-weight: 500;
-  font-size: 15px;
-}
-
 .links {
   display: flex;
   justify-content: center;
@@ -38,7 +32,7 @@
 
 .icon {
   display: flex;
-  margin: 0.8em;
-  color: var(--white-light);
-  font-size: 2vw;
+  margin: 0.35em;
+  color:#FFD9A7;
+  font-size: 25px;
 }
