@@ -6,19 +6,14 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin: auto;
+  padding-left: 20px;
 }
 
 #footer_logo {
-  max-width: 150%;
-  height: 70px;
-  padding-left: 7ex;
-}
-
-.msg {
-  font-size: 14px;
-  color:#FFD9A7;
-  flex-basis: 60%;
+  border-right: 3px solid var(--white-orange);
+  min-width: 50px;
+  max-width: 15%;
+  padding-right: 20px;
 }
 
 .social_media_container {

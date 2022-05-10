@@ -1,7 +1,7 @@
 # Setting up the Sheets API
 1. Create a [Sheets API account](https://www.youtube.com/watch?v=UGN6EUi4Yio) 
-2. Take the account's credentials and store it into `/server/secret.json` (if you're a groupmate, ask [Jethro](https://github.com/AmGthrow) for the credentials)
-3. Take the Spreadsheet ID of the sheet to edit and use it in the `GoogleSpreadsheet()` constructor in `spreadsheet.js`.
+2. Take the server credentials and store them into a `.env` file (if you're a groupmate, ask [Jethro](https://github.com/AmGthrow) for the credentials)
+3. Run `npm install` and `npm start` to start an instance of the server
 
 The linked workbook needs the following:
 - a spreadsheet entitled "Waitlist" for storing client emails

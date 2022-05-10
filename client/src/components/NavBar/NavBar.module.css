@@ -1,28 +1,46 @@
-.content {
+.container {
+  position: fixed;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: var(--white-light);
-  padding-left: 2em;
-  padding-right: 2em;
-  overflow: auto;
+  width: 100%;
+  color: white;
+  transition: 0.5s all;
+  transition-timing-function: ease-out;
+}
+
+.containerScrolled {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #FF9F47;
+  opacity: 1;
+  color:  white;
+  transition: 0.75s all;
+  transition-timing-function: ease-in;
+  z-index: 1;
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
+  margin-left: 7em;
+  margin-bottom: 0.5em;
 }
 
 .items {
   display: flex;
-  align-items: center;
   list-style: none;
+  margin-right: 5em;
 }
 
 .item {
-  margin: 2em;
-  color: var(--yellow-bold);
+  margin: 3em;
   font-size: 12px;
-  font-weight: 500;
-  line-height: 19px;
-  text-decoration: none;
-  white-space: nowrap;
+  font-weight: 600;
+}
+
+.item:hover {
+  color: red;
 }

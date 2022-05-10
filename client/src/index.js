@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from './theme/theme'
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <BrowserRouter>
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

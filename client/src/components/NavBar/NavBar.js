@@ -2,6 +2,7 @@ import React from 'react'
 import NCSS from './NavBar.module.css'
 import nav_bar_logo from '../../assets/nav-bar-logo.png'
 import { NavLink } from 'react-router-dom'
+import SmallScreen from './SmallScreen'
 
 function Logo() {
 
@@ -10,7 +11,7 @@ function Logo() {
 
 function NavItems() {
 
-    const path = [{ to: 'page-a', value: 'Page A' }, { to: 'page-b', value: 'Page B' }, { to: 'page-c', value: 'Page C' }]
+    const path = [{ to: '/', value: 'Home' }, { to: 'about', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
 
     const items = path.map(({ to, value }) => <li key={value}> <Item to={to} value={value} /> </li>)
 
@@ -24,11 +25,19 @@ function Item({ to, value }) {
     return <NavLink className={NCSS.item} to={to}> {page} </NavLink>
 }
 
-export default function NavBar() {
+
+function Desktop ({scrolled}) {
+
     return (
-        <div className={NCSS.content}>
-            <Logo />
-            <NavItems />
+        <div className={scrolled ? NCSS.containerScrolled : NCSS.container } >
+            <Logo /> 
+            <div> <NavItems /> </div> 
         </div>
     )
+}
+
+
+export default function NavBar({width, scrolled}) {
+
+    return width > 790 ? <Desktop scrolled={scrolled}/> : <SmallScreen />
 }
