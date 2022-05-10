@@ -17,7 +17,7 @@
 
 .msg {
   font-size: 14px;
-  color:#FFD9A7;
+  color:#EE0017;
   flex-basis: 60%;
 }
 
@@ -38,6 +38,6 @@
 .icon {
   display: flex;
   margin: 0.35em;
-  color:#FFD9A7;
+  color:#EE0017;
   font-size: 25px;
 }
