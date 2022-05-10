@@ -4,6 +4,7 @@ import MainFeatures from '../domain/MainFeatures/MainFeatures'
 import NavBar from '../components/NavBar/NavBar'
 import Courses from '../domain/Courses/Courses'
 import EmailInputField from '../domain/SendEmailBanner/EmailInputField/EmailInputField'
+import Footer from '../components/Footer/Footer'
 export default function LandingPage() {
 
   const [width, setWidth] = useState(window.innerWidth)
@@ -29,6 +30,8 @@ export default function LandingPage() {
       <Courses/>
 
       <EmailInputField/>
+
+      <Footer/>
     </div>
   )
 }

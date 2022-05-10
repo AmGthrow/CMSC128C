@@ -1,14 +1,13 @@
 import React from 'react';
 import FCSS from './Footer.module.css';
-import { BsFacebook, BsInstagram } from 'react-icons/bs'
-import { FiTwitter } from 'react-icons/fi'
+import { BsFacebook} from 'react-icons/bs'
+import { IoMdMail} from 'react-icons/io'
 
 function SocialMediaLinks() {
   return (
     <ul className={FCSS.links}>
-      <li className={FCSS.icon}> <BsInstagram /> </li>
       <li className={FCSS.icon}> <BsFacebook /> </li>
-      <li className={FCSS.icon}> <FiTwitter /> </li>
+      <li className={FCSS.icon}> <IoMdMail /> </li> 
     </ul>
   )
 }
@@ -17,8 +16,16 @@ function Logo() {
   return (
     <img
       id={FCSS.footer_logo}
-      src={require('../../assets/footer-logo.png')}
+      src={require('../../assets/logo_textless.png')}
       alt='footer logo' />
+  )
+}
+
+function Copyright() {
+  return (
+    <div className={FCSS.msg}>
+      <p> Copyright 2022 &copy;Codercademy <br/>All Rights Reserved</p> 
+    </div>
   )
 }
 
@@ -28,10 +35,9 @@ export default function Footer() {
 
       {/* logo */}
       <Logo />
-
+      <Copyright />
       {/* social media links */}
       <div className={FCSS.social_media_container}>
-        <p className={FCSS.msg}> Follow us! </p>
         <SocialMediaLinks />
       </div>
     </div>

@@ -1,19 +1,24 @@
 .container {
-  width: 100%;
-  background-color: var(--yellow-semi-regular);
+  max-width: 1170px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
+  margin: auto;
 }
 
 #footer_logo {
-  border-right: 3px solid var(--white-orange);
-  min-width: 50px;
-  max-width: 15%;
-  padding-right: 20px;
+  max-width: 150%;
+  height: 70px;
+  padding-left: 7ex;
+}
+
+.msg {
+  font-size: 14px;
+  color:#EE0017;
+  flex-basis: 60%;
 }
 
 .social_media_container {
@@ -24,12 +29,6 @@
   align-items: center;
 }
 
-.msg {
-  color: var(--white-light);
-  font-weight: 500;
-  font-size: 15px;
-}
-
 .links {
   display: flex;
   justify-content: center;
@@ -38,7 +37,7 @@
 
 .icon {
   display: flex;
-  margin: 0.8em;
-  color: var(--white-light);
-  font-size: 2vw;
+  margin: 0.35em;
+  color:#EE0017;
+  font-size: 25px;
 }
