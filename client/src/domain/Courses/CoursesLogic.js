@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 
 const classesData = [{
     title: 'Course 1',
@@ -29,50 +29,60 @@ const classesData = [{
     description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
   },]
 
+let last
 
-let limit = 3
+export default function CoursesLogic({width}) {
 
-export default function CoursesLogic() {
-
-  const [courses, setCourses] = useState([])
-
-  const [index, setIndex] = useState(0)
+  const [courses, setCourses] = useState([]) 
+ 
+  let limit = useRef(0)
 
   const fetchPrev = () => {
 
-      if(index === 0) return
+    last = (last - limit.current) === 0 ? classesData.length : last - limit.current
 
-      const data = classesData.slice(index - limit, index)
+    const data = classesData.slice(last - limit.current , last)
 
-      setIndex(index - limit)
-
-      setCourses(data)
+    setCourses(data)
   }
 
   const fetchNext = () => {
 
-    if(index + limit >= classesData.length) return
+    last = last === classesData.length ? limit.current : last + limit.current
 
-    const data = classesData.slice(index + limit, index + (limit * 2))
-
-    setIndex(index + limit)
+    const data = classesData.slice(last - limit.current , last)
 
     setCourses(data)
   }
 
-  const fetchCourses = () => {
+  const getLimit = useCallback(() => {
 
-    const data = classesData.slice(0, limit)
+    if(width > 1260) limit.current = 3 
+    
+    else limit.current = 1
+
+    last = limit.current
+
+  }, [width])
+
+  const fetchCourses = useCallback(() => {
+
+    const data = classesData.slice(0, limit.current)
 
     setCourses(data)
-  }
+
+  }, [limit])
 
   useEffect(() => {
 
+    getLimit()
+
     fetchCourses()
-  }, [])
+
+  }, [getLimit, fetchCourses])
+
   
-  return {fetchPrev, fetchNext, courses }
+  return {fetchPrev, fetchNext, courses}
 }
 
 

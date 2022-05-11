@@ -22,6 +22,6 @@ function Desktop() {
 
 export default function MainBanner({width}) {
 
-  return width > 790 ? <Desktop/> : <SmallScreen/>
+  return width > 920 ? <Desktop/> : <SmallScreen/>
 
 }

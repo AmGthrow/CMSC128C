@@ -27,7 +27,7 @@ export default function LandingPage() {
 
       <MainFeatures/>
 
-      <Courses/>
+      <Courses width={width}/>
 
       <EmailInputField/>
 

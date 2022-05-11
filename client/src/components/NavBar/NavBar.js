@@ -39,5 +39,5 @@ function Desktop ({scrolled}) {
 
 export default function NavBar({width, scrolled}) {
 
-    return width > 790 ? <Desktop scrolled={scrolled}/> : <SmallScreen />
+    return width > 920 ? <Desktop scrolled={scrolled}/> : <SmallScreen />
 }

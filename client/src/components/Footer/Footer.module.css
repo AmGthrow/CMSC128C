@@ -1,6 +1,6 @@
 .container {
-  max-width: 1170px;
-  background-color: white;
+  width: 100%;
+  background-color: #FF9F47;
   display: flex;
   justify-content: space-between;
   align-items: center;

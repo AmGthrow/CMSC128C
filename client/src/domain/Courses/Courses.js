@@ -20,16 +20,16 @@ function CoursesList ({data}) {
   return <div className={CCSS.list}> {d} </div>
 }
 
-export default function Courses() {
+export default function Courses({width}) {
 
-  const { fetchPrev, fetchNext, courses} = CoursesLogic()
+  const { fetchPrev, fetchNext, courses} = CoursesLogic({width})
 
   return (
     <>
         <Heading/>
         <div className={CCSS.content}>
-        <button onClick={fetchPrev}> <GrFormPrevious/> </button>
-          <CoursesList data={courses} />
+          <button onClick={fetchPrev}> <GrFormPrevious/> </button>
+            <CoursesList data={courses} />
           <button onClick={fetchNext}> <GrFormNext/> </button>
         </div>
     </>
