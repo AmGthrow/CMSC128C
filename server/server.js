@@ -1,26 +1,20 @@
-const express = require('express');
-const swaggerUi = require('swagger-ui-express');
-const swaggerJsDoc = require('swagger-jsdoc');
-const { addToWaitlist } = require('./spreadsheet');
-const app = express();
+require('dotenv').config({ path: '.env' })
+const cors = require('cors')
+const router = require('./route/router')
+const express = require('express')
+const { swaggerServe, swaggerSetup } = require('./middleware/swaggerDocs.middleware')
 
-// Config for API documentation
-const swaggerOptions = {
-    swaggerDefinition: {
-        info: {
-            title: 'Codercademy API',
-            'version': '1.0.0'
-        }
-    },
-    apis: ['server.js']
-};
+// load database 
+require('./database/connection')
 
-const swaggerDocs = swaggerJsDoc(swaggerOptions);
+/* *set up app */
+const app = express()
 
-app.listen(9000, () =>
-    console.log("Listening on port 9000")
-)
+/* set up port */
+const port = process.env.PORT || 8000
 
+/* configure app */
+app.use(cors({ origin: '*' }))  //temporary: let any url to access this port 
 app.use(
     express.urlencoded({
         extended: true
@@ -28,42 +22,10 @@ app.use(
 )
 
 // Serve documentation for API endpoints on /api-docs
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
+app.use('/api/docs', swaggerServe, swaggerSetup)
 
 app.use(express.json())
+app.use('/api', router) // router: base
 
-// TODO: Remove when a frontend view for the landing page is available
-app.get('/', (req, res) => {
-    res.sendFile('src/index.html', { root: __dirname })
-    console.log("User connected")
-})
-
-/**
- * @swagger
- * /api/waitlist:
- *   post:
- *     description: Store a client's email into the waitlist
- *     parameters:
- *       - name: email
- *         description: Client's email address
- *         in: formData
- *         required: true
- *         type: string
- *     responses: 
- *       200:
- *         description: Success
- *       400:
- *         description: Email parameter is missing
- */
-app.post("/api/waitlist", (req, res) => {
-    const email = req.body.email;
-    if (!email) {
-        res.status(400).send("email parameter is required");
-        return;
-    }
-
-    addToWaitlist(email);
-    console.log(`Client ${email} added to waitlist`);
-    res.status(201).send(`Added ${email} to waitlist`)
-})
-
+/* listen to the port */
+app.listen(port, () => console.log(`Listening on port ${port}`))

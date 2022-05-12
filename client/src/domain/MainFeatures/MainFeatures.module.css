@@ -1,66 +1,37 @@
-/* Global container  */
-.container {
-  background-color: var(--white-medium);
-  padding-top: 72px;
-  padding-bottom: 199px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 100px; /*gap between each section in the container */
-}
-
-.container h1 {
-  color: var(--yellow-bold);
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 36px;
-  margin-bottom: 29px;
-}
-
-.container p {
-  color: var(--gray-regular);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-}
 
 /* container for the "features" subsection */
 .features {
   display: flex;
-  gap: 56px;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  position: relative;
+  top: -4em;
 }
 
 /* container for individual features */
 .feature_container {
-  border: 4px solid rgba(228, 110, 0, 0.75);
-  border-radius: 30px;
-  width: 372px;
-  height: 519px;
+  width: 15em;
+  height: 19em;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: space-between;
 }
 
-.feature_container > h1 {
-  color: var(--gray-medium);
-  font-weight: 500;
+.description {
+  color: white; 
+  font-weight: 500; 
+  padding-top: 2em;
+  margin: 1em;
 }
 
-.feature_container > p {
-  font-size: 1.2em;
-  text-align: center;
-  color: var(--gray-medium);
+.description > p {
+  font-size: 0.5em;
 }
 
-.feature_container > .icon {
-  border: 3px dashed var(--border-yellow);
-  border-radius: 50%;
-  width: 196px;
-  height: 196px;
-  margin-top: 33px;
-  margin-bottom: 33px;
+.feature_container > img {
+  max-width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

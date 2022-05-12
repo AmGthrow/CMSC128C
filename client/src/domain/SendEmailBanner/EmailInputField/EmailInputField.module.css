@@ -1,16 +1,42 @@
 .container {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  background-color: #FFCA84;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-
+.email_page_container{
+  width:50%;
+  margin-left:7.5em;
+}
+.container h1{
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: 2.8em;
+  color: #EE0017;
+  line-height: .9em;
+}
+.container p{
+    color: #BF5C00;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:20px;
+}
+.pic{
+  height:400px;
+  position:relative;  
+  right: 5em;
+  bottom: 0;
+}
 .form {
   display: flex;
   max-width: 100%;
+  margin-top: 1em;
 }
 
 .input {
-  width: 100%;
-  border: hidden;
+  width: 74%;
+  border: 3px solid #E57D1D;
   border-radius: 15px;
   padding-left: 15px;
   font-size: 15px;
@@ -23,11 +49,11 @@
 
 .btn {
   background-color: var(--yellow-semi-medium);
-  width: 20%;
-  height: 41px;
-  margin-left: 16px;
-  border: hidden;
+  width: 12%;
+  height: 50px;
+  margin-left: 0.5em;
   border-radius: 15px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1em;
+  font-weight:600;
 }

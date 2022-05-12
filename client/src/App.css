@@ -1,20 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   --white-light: #ffffff;
   --white-medium: #fff8df;
+  --white-orange: #fcc883;
   --yellow-light: #ffe895;
-  --yellow-bold: #ff7a00;
+  --yellow-bold: #FF7A00;
   --yellow-medium: #bf5c00;
   --yellow-semi-medium: #d36500;
   --yellow-semi-regular: #f7ab48;
   --yellow-regular: #7b5828;
   --orange-light: #ffbe83;
-  --orange-medium: rgba(228, 110, 0, 0.75);
+  --orange-medium: #e46e00bf;
   --gray-regular: #313131;
   --gray-medium: #282828;
   --red-bold: #ca0014;
