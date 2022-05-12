@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/CMSC128C/static/css/main.1347c5f0.css",
-    "main.js": "/CMSC128C/static/js/main.de93f7fa.js",
-    "static/media/hero-bg.jpg": "/CMSC128C/static/media/hero-bg.d8e8e1532ad902ab1b1d.jpg",
-    "static/media/index-finger-point.png": "/CMSC128C/static/media/index-finger-point.765828e35021f09919de.png",
-    "static/media/nav-bar-logo.png": "/CMSC128C/static/media/nav-bar-logo.e1dfa8d5984ae00fbf5d.png",
-    "static/media/logo_textless.png": "/CMSC128C/static/media/logo_textless.7a94439b1366ff9bf0a1.png",
-    "static/media/footer-logo.png": "/CMSC128C/static/media/footer-logo.34eaadcc0ea6dff92f6c.png",
+    "main.css": "/CMSC128C/static/css/main.071b8232.css",
+    "main.js": "/CMSC128C/static/js/main.51ecdcfd.js",
+    "static/media/hero-bg.jpg": "/CMSC128C/static/media/hero-bg.2781d89531955c59852e.jpg",
+    "static/media/children-email.png": "/CMSC128C/static/media/children-email.10581c232d1edbe9c706.png",
+    "static/media/kids2.jpg": "/CMSC128C/static/media/kids2.630c5dd668c30e8b9269.jpg",
+    "static/media/kids4.jpg": "/CMSC128C/static/media/kids4.667710955afb64c6a1f2.jpg",
+    "static/media/kids1.jpg": "/CMSC128C/static/media/kids1.8de793178ccc3ea10d3f.jpg",
+    "static/media/nav-bar-logo.png": "/CMSC128C/static/media/nav-bar-logo.6799383c5256b8182001.png",
     "index.html": "/CMSC128C/index.html",
-    "main.1347c5f0.css.map": "/CMSC128C/static/css/main.1347c5f0.css.map",
-    "main.de93f7fa.js.map": "/CMSC128C/static/js/main.de93f7fa.js.map"
+    "main.071b8232.css.map": "/CMSC128C/static/css/main.071b8232.css.map",
+    "main.51ecdcfd.js.map": "/CMSC128C/static/js/main.51ecdcfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.1347c5f0.css",
-    "static/js/main.de93f7fa.js"
+    "static/css/main.071b8232.css",
+    "static/js/main.51ecdcfd.js"
   ]
 }
