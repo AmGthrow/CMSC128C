@@ -1,43 +1,47 @@
 .container {
   width: 100%;
-  background-color: #FF9F47;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: auto;
+  padding-top: 1.8em;
+  padding-bottom: 1.6em;
+  /* background-color: #FFCA84; */
 }
 
 #footer_logo {
-  max-width: 150%;
   height: 70px;
-  padding-left: 7ex;
+  padding-left: 7em;
 }
 
 .msg {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 500;
   color:#EE0017;
   flex-basis: 60%;
 }
 
 .social_media_container {
   min-width: 20%;
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-right: 3em;
 }
 
 .links {
   display: flex;
   justify-content: center;
-  list-style-type: none;
+}
+
+.iconContainer {
+  padding: 0.35em;
+  font-size: 20px;
+  background-color: #EE0017;
+  color: white;
+  border-radius: 50%;
+  margin-left: 0.7em;
 }
 
 .icon {
   display: flex;
   margin: 0.35em;
   color:#EE0017;
-  font-size: 25px;
+  font-size: 23px;
 }

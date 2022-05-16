@@ -1,6 +1,7 @@
 .container {
   background-color: #FFCA84;
-  height: 65vh;
+  /* background-color: white; */
+  height: 70vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -10,17 +11,16 @@
   margin-left:7.5em;
 }
 .container h1{
-  margin-top: 0.5em;
   font-weight: 700;
   font-size: 2.8em;
   color: #EE0017;
   line-height: .9em;
 }
 .container p{
-    color: #BF5C00;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top:20px;
+  color: #BF5C00;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top:20px;
 }
 .pic{
   height:400px;
@@ -35,7 +35,7 @@
 }
 
 .input {
-  width: 74%;
+  width: 65%;
   border: 3px solid #E57D1D;
   border-radius: 15px;
   padding-left: 15px;
@@ -49,11 +49,11 @@
 
 .btn {
   background-color: var(--yellow-semi-medium);
-  width: 12%;
+  width: 10%;
   height: 50px;
-  margin-left: 0.5em;
+  margin-left: 0.6em;
   border-radius: 15px;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 0.85em;
   font-weight:600;
 }

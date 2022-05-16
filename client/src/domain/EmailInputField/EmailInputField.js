@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import child from '../../../assets/children-email.png'
+import child from '../../assets/children-email.png'
 import EFCSS from './EmailInputField.module.css'
-import {saveEmailAddress} from '../../../api/FetchLogic/saveEmailAddress'
+import {saveEmailAddress} from '../../api/FetchLogic/saveEmailAddress'
 
 
 export default function EmailInputField() {
@@ -28,7 +28,7 @@ export default function EmailInputField() {
   <div className={EFCSS.container}> 
     <div className={EFCSS.email_page_container}>
       <h1>Jump right into coding<br/> with Coderacademy!</h1>
-      <p>To enroll, leave us your email,<br/> and we'll contact you</p>
+      <p>To enroll, leave us your email,<br/> and we'll contact you.</p>
       <form className={EFCSS.form} onSubmit={handleSubmit}>
           <input 
             className={EFCSS.input}
