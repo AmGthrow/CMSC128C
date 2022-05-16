@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #FF9F47;
+  background-color: #FFCA84;
   opacity: 1;
   color:  white;
   transition: 0.75s all;
@@ -32,7 +32,7 @@
 .items {
   display: flex;
   list-style: none;
-  margin-right: 5em;
+  margin-right: 5.7em;
 }
 
 .item {

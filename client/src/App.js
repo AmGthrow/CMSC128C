@@ -1,8 +1,9 @@
 import './App.css';
 import { Routes, Route} from "react-router-dom";
 import LandingPage from './webpages/LandingPage';
-import ClassListPage from './webpages/ClassListPage';
-import AccountingDashboard from  './webpages/AccountingDashboard'
+import AboutUsPage from './webpages/AboutUsPage';
+import CoursesPage from './webpages/CoursesPage';
+import EnrollNowPage from './webpages/EnrollNowPage';
 
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage/>} />
-        <Route path="/class-list" element={<ClassListPage/>} />
-        <Route path="/accounting/*" element={<AccountingDashboard/>} />
+        <Route path="about" element={<AboutUsPage/>}/>
+        <Route path="courses" element={<CoursesPage/>} />
+        <Route path="enroll" element={<EnrollNowPage/>}/>
       </Routes>
     </div>
   );

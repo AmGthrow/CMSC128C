@@ -4,6 +4,7 @@
   background-color: #FF9F47;
   display: flex;
   border-radius: 20px;
+  /* box-shadow: 0 0 white, 0 0 white, 0 5px 5px -2px rgb(73, 70, 70); */
 }
 
 .container:hover {
