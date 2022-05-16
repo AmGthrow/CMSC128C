@@ -9,35 +9,33 @@ function Logo() {
     return <img className={NCSS.logo} src={nav_bar_logo} alt='hero logo' />
 }
 
-function NavItems() {
+function NavItems({path}) {
 
-    const path = [{ to: '/', value: 'Home' }, { to: 'about', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
+    const items = path.map(({ to, value }) => <nav key={value}> 
+        <NavLink 
+        className={NCSS.item} 
+        to={to}
+        style={({ isActive }) => {return {color: isActive ? "red" : "",}}}> 
+        {value} 
+        </NavLink> </nav>)
 
-    const items = path.map(({ to, value }) => <li key={value}> <Item to={to} value={value} /> </li>)
-
-    return <ul className={NCSS.items}>{items}</ul>
+    return <div className={NCSS.items}>{items}</div>
 }
 
-function Item({ to, value }) {
-
-    const page = <span>{value}</span>
-
-    return <NavLink className={NCSS.item} to={to}> {page} </NavLink>
-}
-
-
-function Desktop ({scrolled}) {
+function Desktop ({scrolled, path}) {
 
     return (
         <div className={scrolled ? NCSS.containerScrolled : NCSS.container } >
             <Logo /> 
-            <div> <NavItems /> </div> 
+            <div> <NavItems path={path}/> </div> 
         </div>
     )
 }
 
-
 export default function NavBar({width, scrolled}) {
 
-    return width > 920 ? <Desktop scrolled={scrolled}/> : <SmallScreen />
+    const path = [{ to: '/', value: 'Home' }, { to: 'about', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
+
+
+    return width > 920 ? <Desktop scrolled={scrolled} path={path}/> : <SmallScreen />
 }
