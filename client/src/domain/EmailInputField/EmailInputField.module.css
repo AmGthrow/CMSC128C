@@ -12,15 +12,15 @@
 }
 .container h1{
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 3em;
   color: #EE0017;
   line-height: .9em;
 }
 .container p{
   color: #BF5C00;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  margin-top:20px;
+  margin-top: 10px;
 }
 .pic{
   width: 43%;
@@ -31,7 +31,7 @@
 .form {
   display: flex;
   max-width: 100%;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .input {
