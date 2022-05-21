@@ -1,4 +1,5 @@
 import React from 'react'
+import CoursesTabsBar from '../components/CoursesTabsBar/CoursesTabsBar'
 
 export default function CoursesPage() {
   const container = {
@@ -12,7 +13,7 @@ export default function CoursesPage() {
   return (
     <div style={container}>
       <div  style={content}>
-       {/* insert code here */}
+       <CoursesTabsBar/>
       </div>
     </div>
   )
