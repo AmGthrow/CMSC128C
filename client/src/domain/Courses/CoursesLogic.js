@@ -9,11 +9,11 @@ const classesData = [{
   },{
     title: 'Coding With Science',
     description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  }]
+  },]
 
 let last
 
-export default function MainCoursesLogic({width}) {
+export default function CoursesLogic({width}) {
 
   const [courses, setCourses] = useState([]) 
  
@@ -37,9 +37,9 @@ export default function MainCoursesLogic({width}) {
     setCourses(data)
   }
 
-  const fetchCourses = () => {
+  const fetchCourses = useCallback(() => {
 
-    limit.current = width > 920 ? 3 : 1
+    limit.current = width > 1260 ? 3 : 1 
 
     last = limit.current
 
@@ -47,13 +47,13 @@ export default function MainCoursesLogic({width}) {
 
     setCourses(data)
 
-  }
+  }, [width])
 
   useEffect(() => {
 
     fetchCourses()
 
-  }, [width])
+  }, [fetchCourses])
 
   
   return {fetchPrev, fetchNext, courses}

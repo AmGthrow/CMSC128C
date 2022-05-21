@@ -1,10 +1,9 @@
 .container {
   width: 23.1em;
-  height: 11em;
+  height: 12em;
   background-color: #FF9F47;
   display: flex;
   border-radius: 20px;
-  /* box-shadow: 0 0 white, 0 0 white, 0 5px 5px -2px rgb(73, 70, 70); */
 }
 
 .container:hover {
@@ -21,7 +20,7 @@
 }
 
 .text>h1 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .text>p {
@@ -44,7 +43,7 @@
 
 .container>img {
   width: 7.7em; 
-  height: 11em; 
+  height: 12em; 
   object-fit: cover;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
