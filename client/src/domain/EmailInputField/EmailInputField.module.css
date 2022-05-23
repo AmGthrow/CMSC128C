@@ -22,7 +22,7 @@
   margin-top: 10px;
 }
 .pic{
-  width: 43%;
+  max-height: fit-content;
   position:relative;  
   right: 5em;
   bottom: 0;
@@ -106,7 +106,7 @@
   .email_page_container{
     position: relative;
     left: -3em;
-    padding-top: 1em;;
+    padding-top: 0.3em;;
   }
 
   .container h1{ 
