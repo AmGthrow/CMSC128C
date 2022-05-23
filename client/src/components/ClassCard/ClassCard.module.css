@@ -7,7 +7,7 @@
 }
 
 .container:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.25s;
   transition-timing-function: ease-in;
   z-index: 1;
@@ -47,4 +47,29 @@
   object-fit: cover;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .container {
+    width: 22em;
+    height: 11em;
+  }
+
+.text {
+  padding: 0.9em;
+}
+
+.text>h1 {
+  font-size: 0.9em;
+}
+
+.text>p {
+  font-size: .5em;
+}
+
+.container>img {
+  width: 7.5em; 
+  height: 11em; 
+}
 }

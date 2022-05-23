@@ -1,5 +1,4 @@
 
-/* container for the "features" subsection */
 .features {
   display: flex;
   justify-content: center;
@@ -9,7 +8,6 @@
   top: -4em;
 }
 
-/* container for individual features */
 .feature_container {
   width: 15em;
   height: 19em;
@@ -36,4 +34,37 @@
   max-width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+} 
+
+@media only screen and (max-width: 768px) {
+  .feature_container {
+    width: 12em;
+    height: 17em;
+  }
+  
+  .description {
+    margin: 0.8em;
+  }
+  
+  .description > p {
+    font-size: 0.6em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .feature_container {
+    width: 11.5em;
+    height: 16em;
+  }
+
+  .description {
+    margin: 0.8em;
+  }
+  
+  .description > p {
+    font-size: 0.6em;
+  }
+  
 }

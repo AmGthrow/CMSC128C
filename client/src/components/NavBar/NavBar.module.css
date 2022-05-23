@@ -6,21 +6,17 @@
   width: 100%;
   color: white;
   transition: 0.5s all;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-out;  
+  max-height: 5em;
+  z-index: 1;
 }
 
-.containerScrolled {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.container#scrolled{
   background-color: #FFCA84;
   opacity: 1;
   color:  white;
   transition: 0.75s all;
   transition-timing-function: ease-in;
-  z-index: 1;
 }
 
 .logo {
@@ -29,18 +25,94 @@
   margin-bottom: 0.5em;
 }
 
-.items {
+.rightSide {
   display: flex;
   list-style: none;
   margin-right: 5.7em;
-}
-
-.item {
-  margin: 3em;
   font-size: 12px;
   font-weight: 600;
 }
 
-.item:hover {
+.rightSide button {
+  display: none;
+}
+
+.link {
+  margin: 3em;
+}
+
+.link:hover {
   color: red;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  .logo{
+    margin-left: 5.5em;
+  }
+
+  .rightSide {
+    margin-right: 5.3em;
+  }
+
+  .link{
+    margin: 2em
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .logo{
+    margin-left: 4em;
+  }
+
+  .rightSide {
+    margin-right: 4.5em;
+  }
+
+  .link{
+    margin: 1em
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    background-color: #FFCA84;
+    transition: 0s;
+  }
+
+  .logo{
+    margin-left: 2em;
+  }
+
+  .rightSide {
+    margin-right: 2em;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links#hidden {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFCA84;
+    transition: 0s;
+  }
+
+  .rightSide > button {
+    display: flex;
+    margin-right: 1em;
+    font-size: 1.3em;
+  }
+  
 }

@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .email_page_container{
   width:45%;
@@ -23,7 +22,7 @@
   margin-top: 10px;
 }
 .pic{
-  width: 43%;
+  max-height: fit-content;
   position:relative;  
   right: 5em;
   bottom: 0;
@@ -49,11 +48,121 @@
 
 .btn {
   background-color: var(--yellow-semi-medium);
-  width: 10%;
+  width: 5em;
   height: 50px;
   margin-left: 0.6em;
   border-radius: 15px;
   color: #ffffff;
   font-size: 0.85em;
   font-weight:600;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .email_page_container{
+    width:45%;
+    margin-left: 7em;
+  }
+  .container h1{
+    font-weight: 900;
+    font-size: 2.6em;
+    text-align: center;
+  }
+  .container p{
+    font-size: 16px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .pic{
+    width: 43%;
+    position:relative;  
+    right: 2em;
+    bottom: 0;
+  }
+  .form {
+    margin-top: 0.5em;
+    justify-content: center;
+  }
+  
+  .input {
+    width: 65%;
+    font-size: 13px;
+  }
+  
+  .btn {
+    width: 4em;
+    height: 50px;
+    font-size: 0.70em;
+    font-weight:600;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .email_page_container{
+    position: relative;
+    left: -3em;
+    padding-top: 0.3em;;
+  }
+
+  .container h1{ 
+    font-weight: 900;
+    font-size: 2em;
+  }
+
+  .container p{
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .pic{
+    width: 43%;
+    position: relative; 
+    left: 0; 
+  }
+  .form {
+    margin-top: 0.5em;
+    justify-content: center;
+  }
+  
+  .input {
+    width: 100%;
+    font-size: 10px;
+  }
+  
+  .btn {
+    width: 5em;
+    font-size: 0.72em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .container h1{ 
+    font-size: 1.6em;
+  }
+
+  .container p{
+    font-size: 10px;
+    margin-top: 2px;
+  }
+  
+  .input {
+    font-size: 7px;
+  }
+  
+  .btn {
+    width: 5em;
+    font-size: 0.50em;
+  }
+  
+  .pic{
+    margin-top: 0.3em;
+    width: 53%;
+  }
 }

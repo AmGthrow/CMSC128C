@@ -7,36 +7,102 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: right;
   justify-content: center;
-  text-align: center;
 }
+
 .container{
   text-align: right;
   align-items: flex-end;
-  padding-left: 40em;
-  padding-right: 8em;
+  padding-left: 30em;
+  padding-right: 7em;
+  color: #EE0017;
+}
+
+.intro{
+  padding-top: 1em;
+  font-weight: 900;
+  font-size: 3.5em;
+  line-height: .9em;
+}
+
+.since {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  font-weight: 700;
 }
 
 .description{
   font-size: 14px;
-  padding-left: 8em;
+  align-items: center;
   color: #424242;
   font-weight: 600;
-}
-.intro{
-  font-weight: 900;
-  color: #EE0017;
-  margin-top: 0.5em;
-  font-size: 3.5em;
-  line-height: .9em;
-}
-.since {
-  font-size: 1.8em;
-  margin-bottom: 1em;
-  color: #EE0017;
-  font-weight: 700;
+  padding-left: 5em;
 }
 
 
+@media only screen and (max-width: 992px) {
 
+  .container {
+    padding-left: 25em;
+    padding-right: 5.4em;
+  }
+
+  .intro{
+    font-size: 3.3em;
+  }
+
+  .since {
+    font-size: 1.3em;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+
+  .container {
+    padding-left: 4em;
+    padding-right: 4em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro{
+    font-size: 3em;
+  }
+
+  .since {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 12px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro{
+    font-size: 3em;
+  }
+
+  .since {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 12px;
+    padding-left: 0;
+  }
+  
+}

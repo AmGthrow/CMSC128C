@@ -39,7 +39,7 @@ export default function CoursesLogic({width}) {
 
   const fetchCourses = useCallback(() => {
 
-    limit.current = width > 1260 ? 3 : 1 
+    limit.current = width > 786 ? 3 : 1 
 
     last = limit.current
 
