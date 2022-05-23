@@ -46,3 +46,57 @@
   color:#EE0017;
   font-size: 23px;
 }
+
+
+@media only screen and (max-width: 992px) {
+
+  #footer_logo {
+    height: 55px;
+    padding-left: 5em;
+  }
+  
+  .msg {
+    font-size: 10px;
+  }
+  
+  .social_media_container {
+    min-width: 18%;
+    margin-right: 2em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #footer_logo {
+    height: 35px;
+    padding-left: 3em;
+  }
+  
+  .msg {
+    font-size: 8px;
+  }
+  
+  .social_media_container {
+    min-width: 16%;
+    margin-right: 2.5em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #footer_logo {
+    height: 30px;
+    padding-left: 1.5em;
+  }
+  
+  .msg {
+    font-size: 6px;
+  }
+  
+  .social_media_container {
+    min-width: 14%;
+    margin-right: 2em;
+  }
+  
+}

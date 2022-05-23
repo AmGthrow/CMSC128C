@@ -3,7 +3,6 @@ import child from '../../assets/children-email.png'
 import EFCSS from './EmailInputField.module.css'
 import {saveEmailAddress} from '../../api/FetchLogic/saveEmailAddress'
 
-
 export default function EmailInputField() {
   const [emailAddress, setEmailAddress] = useState ('')
 

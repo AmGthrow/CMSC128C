@@ -1,6 +1,5 @@
 import React from 'react'
 import MBCSS from './MainBanner.module.css'
-import SmallScreen from './SmallScreen'
 
 function Greetings() {
   return (
@@ -15,16 +14,7 @@ function Greetings() {
   )
 }
 
-
-function Desktop() {
-  return (
-    <div className={MBCSS.container}> <Greetings /> </div>
-  )
-}
-
-
 export default function MainBanner({width}) {
 
-  return width > 920 ? <Desktop/> : <SmallScreen/>
-
+  return <div className={MBCSS.container}> <Greetings /> </div>
 }

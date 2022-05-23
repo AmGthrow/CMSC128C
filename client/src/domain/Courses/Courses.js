@@ -13,13 +13,9 @@ export default function Courses({width}) {
     <>
       <Heading/>
       <div className={CCSS.content}>
-        {width > 1260 ? 
-        <CoursesList data={courses} /> : 
-        <> 
           <button onClick={fetchPrev}> <GrFormPrevious/> </button>
           <CoursesList data={courses} />
           <button onClick={fetchNext}> <GrFormNext/> </button> 
-        </>}
        </div>
     </>
   )
