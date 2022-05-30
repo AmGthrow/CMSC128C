@@ -1,7 +1,7 @@
 /* align to center by default for mobile-first rendering */
 .container {
   overflow: hidden;
-  min-height: 85vh;
+  min-height: 80vh;
   background-image: url("../../assets/hero-bg.jpg");
   background-position: 50% 44%;
   background-size: cover;
@@ -13,13 +13,14 @@
 .container{
   text-align: right;
   align-items: flex-end;
-  padding-left: 30em;
-  padding-right: 7em;
+  padding-left: 28%;
+  padding-right: 16%;
+
   color: #EE0017;
 }
 
 .intro{
-  padding-top: 1em;
+  /* padding-top: 1em; */
   font-weight: 900;
   font-size: 3.5em;
   line-height: .9em;
@@ -27,16 +28,16 @@
 
 .since {
   font-size: 1.8em;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   font-weight: 700;
 }
 
 .description{
-  font-size: 14px;
+  font-size: 16px;
   align-items: center;
   color: #424242;
   font-weight: 600;
-  padding-left: 20em;
+  padding-left: 25em;
 }
 
 
