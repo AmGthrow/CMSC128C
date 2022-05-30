@@ -25,7 +25,7 @@ function Heading() {
   return (
   <div className={CCSS.headingcontainer}>
       <h1 className={CCSS.heading}>Courses Offered</h1>
-      <p className={CCSS.paragraph}>Our globally-competent courses are based on the highly successful Saturday Kids curricula, Singapore’s First Online Coding School. <br/>Take a look at the different coding adventures that await in each of our courses.</p>
+      <p className={CCSS.paragraph}>Our globally-competent courses are based on the highly successful Saturday Kids curricula, Singapore’s First Online Coding School. Take a look at the different coding adventures that await in each of our courses.</p>
   </div>
   )
 }
