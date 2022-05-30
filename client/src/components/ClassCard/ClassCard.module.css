@@ -23,12 +23,13 @@
 
 .text>h1 {
   font-size: 1.8em;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .text>p {
   font-size: 1em;
-  line-height: 1.3;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .text>button {

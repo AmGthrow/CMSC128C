@@ -24,14 +24,14 @@
 }
 
 .logo {
-  width: 100px;
+  width: 110px;
 }
 
 .rightSide {
   display: flex;
   list-style: none;
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 

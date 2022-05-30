@@ -9,17 +9,16 @@
 
 .heading {
     color: #DB6900;
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
 
 .paragraph {
     color: #8F8F8F;
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-weight: 400;
-    padding-left: 18em;
-    padding-right: 18em;
+    padding: 0 20%;
     text-align: center;
 }
 
