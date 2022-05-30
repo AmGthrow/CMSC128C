@@ -1,40 +1,43 @@
 .container {
-  height: 70vh;
+  height: 450px;
   background-color: #FFCA84; 
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
 .email_page_container{
-  width:45%;
-  margin-left: 9em;
+  /* width:45%; */
+  margin-right: 9em;
 }
 .container h1{
   font-weight: 900;
   font-size: 3em;
   color: #EE0017;
-  line-height: .9em;
+  line-height: 1.1;
 }
 .container p{
   color: #BF5C00;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   margin-top: 10px;
 }
 .pic{
-  max-height: fit-content;
+  height: 95%;
   position:relative;  
-  right: 5em;
-  bottom: 0;
+  /* right: 10%; */
+  top: 0.7em;
+ 
 }
 .form {
   display: flex;
   max-width: 100%;
-  margin-top: 0.5em;
+  margin-top: 64px;
 }
 
 .input {
-  width: 65%;
+  width: 75%;
   border: 3px solid #E57D1D;
   border-radius: 15px;
   padding-left: 15px;
@@ -47,14 +50,20 @@
 }
 
 .btn {
-  background-color: var(--yellow-semi-medium);
-  width: 5em;
+  background-color: var(--border-yellow);
+  width: 100px;
   height: 50px;
-  margin-left: 0.6em;
+  margin-left: 1em;
   border-radius: 15px;
   color: #ffffff;
-  font-size: 0.85em;
-  font-weight:600;
+  font-size: 1.1em;
+  font-weight:500;
+}
+
+.btn:hover {
+  background-color: var(--yellow-semi-medium);
+  color: #ffffff;
+
 }
 
 @media only screen and (max-width: 992px) {
