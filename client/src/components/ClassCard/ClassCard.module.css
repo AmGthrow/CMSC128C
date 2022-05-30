@@ -1,10 +1,10 @@
 .container {
-  width: 15em;
-  height: 23em;
+  width: 25em;
+  height: 40em;
   background-color: #FF9F47;
   /* display: flex; */
-  border-radius: 20px;
-  margin: 0 0.1em 0 0.1em;
+  border-radius: 30px;
+  margin: 0 0.5em 0 0.5em;
   position: relative;
 }
 
@@ -18,24 +18,26 @@
 .text {
   color: white;
   font-weight: 500;
-  padding: 1.6em;
+  padding: 2.5em;
 }
 
 .text>h1 {
-  font-size: 1em;
+  font-size: 1.8em;
   line-height: 1.2;
 }
 
 .text>p {
-  font-size: .6em;
+  font-size: 1em;
   line-height: 1.3;
 }
 
 .text>button {
   border: .17em solid white;
-  border-radius: 6px;
-  font-size: 0.6em;
-  padding: 0.5em 7em  0.5em 7em;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+  /* padding: 0.5em 100%; */
+  padding: 0.5em 6.3em;
   position: relative;
   bottom: -2em;
 }
@@ -45,8 +47,8 @@
 }
 
 .container>img {
-  width: 15em; 
-  height: 10em; 
+  width: 25em; 
+  height: 40%; 
   object-fit: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
