@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
 }
   
 .tab {
@@ -70,14 +71,14 @@
     font-size: 3.5em;
     line-height: .9em;
     padding-bottom: 1em;
-    color: #BF5C00;
+    color: var(--yellow-semi-medium);
     width: 1051px;
 }
 
 .description{
     font-size: 17px;
     align-items: center;
-    color: #BF5C00;
+    color: var(--yellow-semi-medium);
     font-weight: 600;
     padding-bottom: 5em;
     width: 1051px;

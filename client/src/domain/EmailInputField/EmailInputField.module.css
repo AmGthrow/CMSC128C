@@ -1,5 +1,5 @@
 .container {
-  height: 600px;
+  height: 700px;
   background-color: #FFCA84; 
   display: flex;
   align-items: center;
@@ -17,6 +17,7 @@
   font-size: 3em;
   color: #EE0017;
   line-height: 1.1;
+  width: 85%;
 }
 .container p{
   color: #BF5C00;
@@ -30,7 +31,7 @@
   position:relative;  
   object-fit: cover;
   /* right: 10%; */
-  top: 1.8em;
+  top: 2.2em;
  
 }
 .form {
