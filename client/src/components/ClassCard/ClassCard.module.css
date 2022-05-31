@@ -1,6 +1,6 @@
 .container {
-  width: 25em;
-  height: 40em;
+  width: 21em;
+  height: 36em;
   background-color: #FF9F47;
   /* display: flex; */
   border-radius: 30px;
@@ -22,7 +22,7 @@
 }
 
 .text>h1 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.1;
 }
 
@@ -38,9 +38,9 @@
   font-size: 1.1em;
   font-weight: 500;
   /* padding: 0.5em 100%; */
-  padding: 0.5em 6.3em;
+  padding: 0.4em 4.5em;
   position: relative;
-  bottom: -2em;
+  bottom: -1.5em;
 }
 
 .text>button:hover {
@@ -48,7 +48,7 @@
 }
 
 .container>img {
-  width: 25em; 
+  width: auto; 
   height: 40%; 
   object-fit: cover;
   border-bottom-left-radius: 20px;
