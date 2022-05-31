@@ -26,7 +26,7 @@ export default function EmailInputField() {
   return (
   <div className={EFCSS.container}> 
     <div className={EFCSS.email_page_container}>
-      <h1>Jump right into coding<br/> with Coderacademy!</h1>
+      <h1>Jump right into coding with Coderacademy!</h1>
       <p>To enroll, leave us your email, and we'll contact you.</p>
       <form className={EFCSS.form} onSubmit={handleSubmit}>
           <input 
