@@ -1,0 +1,36 @@
+.container {
+  height: 650px;
+  background-color: #F6C785;
+  display: flex;
+  /* align-items: center; */
+  padding-left: 10%;
+}
+
+.text {
+  width: 50%;
+  padding-top: 10%;
+  /* padding-bottom: 15%; */
+  padding-right: 10%
+
+  /* padding-right: 20%; */
+  /* padding: 150px; */
+}
+
+.text > h2 {
+  color: red;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.text > p {
+  color: black;
+  font-size: 1.3em;
+}
+
+img {
+  width: 50%;
+  height: 100%;
+  /* display: relative; */
+  object-fit: cover;
+}
