@@ -11,14 +11,15 @@
 
 #footer_logo {
   height: 90px;
-  padding-left: 7em;
+  width: auto;
+  padding-left: 8em;
 }
 
 .msg {
   font-size: 13px;
   font-weight: 500;
   color:#EE0017;
-  flex-basis: 60%;
+  flex-basis: 61%;
 }
 
 .social_media_container {
