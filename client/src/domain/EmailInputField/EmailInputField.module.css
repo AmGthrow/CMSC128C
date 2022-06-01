@@ -1,0 +1,181 @@
+.container {
+  height: 700px;
+  background-color: #FFCA84; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 10%;
+}
+
+.email_page_container{
+  /* width:45%; */
+  /* margin-right: 9em; */
+}
+.container h1{
+  font-weight: 900;
+  font-size: 3em;
+  color: #EE0017;
+  line-height: 1.1;
+  width: 85%;
+}
+.container p{
+  color: #BF5C00;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.pic{
+  height: 90%;
+  width: auto;
+  position:relative;  
+  object-fit: cover;
+  /* right: 10%; */
+  top: 2.2em;
+ 
+}
+.form {
+  display: flex;
+  max-width: 100%;
+  margin-top: 64px;
+}
+
+.input {
+  width: 75%;
+  border: 3px solid #E57D1D;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: none !important;
+  border: 1px solid var(--border-yellow);
+}
+
+.btn {
+  background-color: var(--border-yellow);
+  width: 100px;
+  height: 50px;
+  margin-left: 1em;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight:500;
+}
+
+.btn:hover {
+  background-color: var(--yellow-semi-medium);
+  color: #ffffff;
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .email_page_container{
+    width:45%;
+    margin-left: 7em;
+  }
+  .container h1{
+    font-weight: 900;
+    font-size: 2.6em;
+    text-align: center;
+  }
+  .container p{
+    font-size: 16px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .pic{
+    width: 43%;
+    position:relative;  
+    right: 2em;
+    bottom: 0;
+  }
+  .form {
+    margin-top: 0.5em;
+    justify-content: center;
+  }
+  
+  .input {
+    width: 65%;
+    font-size: 13px;
+  }
+  
+  .btn {
+    width: 4em;
+    height: 50px;
+    font-size: 0.70em;
+    font-weight:600;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .email_page_container{
+    position: relative;
+    left: -3em;
+    padding-top: 0.3em;;
+  }
+
+  .container h1{ 
+    font-weight: 900;
+    font-size: 2em;
+  }
+
+  .container p{
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .pic{
+    width: 43%;
+    position: relative; 
+    left: 0; 
+  }
+  .form {
+    margin-top: 0.5em;
+    justify-content: center;
+  }
+  
+  .input {
+    width: 100%;
+    font-size: 10px;
+  }
+  
+  .btn {
+    width: 5em;
+    font-size: 0.72em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .container h1{ 
+    font-size: 1.6em;
+  }
+
+  .container p{
+    font-size: 10px;
+    margin-top: 2px;
+  }
+  
+  .input {
+    font-size: 7px;
+  }
+  
+  .btn {
+    width: 5em;
+    font-size: 0.50em;
+  }
+  
+  .pic{
+    margin-top: 0.3em;
+    width: 53%;
+  }
+}

@@ -4,11 +4,15 @@ import { BsFacebook} from 'react-icons/bs'
 import { IoMdMail} from 'react-icons/io'
 
 function SocialMediaLinks() {
+
+  const linkList = [{name: 'fb', icon: <BsFacebook />}, {name: 'mail', icon: <IoMdMail />}]
+
+  const links = linkList.map((link) => <div key={link.name} className={FCSS.iconContainer}>  {link.icon} </div>)
+
   return (
-    <ul className={FCSS.links}>
-      <li className={FCSS.icon}> <BsFacebook /> </li>
-      <li className={FCSS.icon}> <IoMdMail /> </li> 
-    </ul>
+    <div className={FCSS.links}>
+      {links}
+    </div>
   )
 }
 

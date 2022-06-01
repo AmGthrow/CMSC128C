@@ -1,0 +1,110 @@
+.section {
+    display: flex;
+    justify-content: center;
+    background-color: #F6C785;
+}
+
+.introduction {
+    background-color: white;
+    padding: 4.5em 25% 5em;
+    text-align: center;
+}
+
+.head1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #DB6900;
+    padding-bottom: 0.8em;
+}
+
+.p1 {
+    color: #8F8F8F;
+    font-size: 1.1em;
+    
+}
+
+.visionmission {
+    padding: 2em;
+    padding-right: 1em;
+}
+
+.head2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #DB6900;
+    margin-bottom: 0.4em;
+}
+
+.p2 {
+    color: #8F8F8F;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.vmcontainer {
+    border-radius: 1.5em;
+    margin: 1.5em 0;
+    padding: 2.5em;
+    background-color: white;
+    width: 30em;
+}
+
+.kidheadphones {
+    /* position: absolute;
+    top: 28em;
+    left: 12em; */
+    bottom: 0;
+    height: 36em;
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: #F6C785;
+    }
+    
+    .p1 {
+        color: #8F8F8F;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    .visionmission {
+        padding: 2em;
+        padding-right: 0em;
+    }
+
+    .head2 {
+        margin-bottom: 0.2em;
+        font-size: 2.25em;
+        font-weight: 600;
+        color: #DB6900;
+    }
+    
+    .p2 {
+        color: #8F8F8F;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    
+    .vmcontainer {
+        border-radius: 1.5em;
+        margin: 0.75em;
+        margin-bottom: 2em;
+        padding: 2.5em;
+        background-color: white;
+        width: 25em;
+    }
+    
+    .kidheadphones {
+        /* position: absolute;
+        top: 28em;
+        left: 12em; */
+        transform: scale(1);
+        bottom: 0;
+        align-self: flex-end;
+    }
+}

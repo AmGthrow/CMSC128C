@@ -1,43 +1,44 @@
-import React from 'react'
+import React, {useState} from 'react'
 import NCSS from './NavBar.module.css'
 import nav_bar_logo from '../../assets/nav-bar-logo.png'
 import { NavLink } from 'react-router-dom'
-import SmallScreen from './SmallScreen'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 function Logo() {
 
     return <img className={NCSS.logo} src={nav_bar_logo} alt='hero logo' />
 }
 
-function NavItems() {
+function NavItems({path}) {
 
-    const path = [{ to: '/', value: 'Home' }, { to: 'about', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
+    const [showLinks, setShowLinks] = useState(false)
 
-    const items = path.map(({ to, value }) => <li key={value}> <Item to={to} value={value} /> </li>)
-
-    return <ul className={NCSS.items}>{items}</ul>
-}
-
-function Item({ to, value }) {
-
-    const page = <span>{value}</span>
-
-    return <NavLink className={NCSS.item} to={to}> {page} </NavLink>
-}
-
-
-function Desktop ({scrolled}) {
+    const links = path.map(({ to, value }) => 
+        <NavLink 
+            className={NCSS.link}
+            key={value} 
+            to={to}
+            style={({ isActive }) => {return {color: isActive ? "red" : "",}}}> 
+            {value} 
+        </NavLink>)
 
     return (
-        <div className={scrolled ? NCSS.containerScrolled : NCSS.container } >
-            <Logo /> 
-            <div> <NavItems /> </div> 
+        <div className={NCSS.rightSide}>
+            <div className={NCSS.links} id={showLinks ? NCSS.hidden : ""}> {links} </div>
+            <button onClick={() => setShowLinks(!showLinks)}><GiHamburgerMenu/></button>
         </div>
     )
 }
 
 
-export default function NavBar({width, scrolled}) {
+export default function NavBar({scrolled}) {
 
-    return width > 920 ? <Desktop scrolled={scrolled}/> : <SmallScreen />
+    const path = [{ to: '/', value: 'Home' }, { to: 'about', value: 'About Us' }, { to: 'courses', value: 'Courses' }, { to: 'enroll', value: 'Enroll' }]
+
+    return (
+        <div className={NCSS.container } id={scrolled ? NCSS.scrolled : ""}>
+            <Logo /> 
+            <NavItems path={path}/> 
+        </div>
+    )
 }

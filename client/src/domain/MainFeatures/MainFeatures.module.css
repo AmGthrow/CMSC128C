@@ -1,5 +1,3 @@
-
-/* container for the "features" subsection */
 .features {
   display: flex;
   justify-content: center;
@@ -9,29 +7,75 @@
   top: -4em;
 }
 
-/* container for individual features */
 .feature_container {
-  width: 15em;
-  height: 19em;
+  width: 18em;
+  height: 28em;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  padding: 1.5em;
+  padding-bottom: 1.2em;
+  box-shadow: 0 0 white, 0 0 white, 0 5px 5px -2px rgb(100, 100, 100);
 }
 
 .description {
   color: white; 
-  font-weight: 500; 
-  padding-top: 2em;
-  margin: 1em;
+  padding-top: 0.8em;
+  margin: 0.8em;
+  text-align: center;
+}
+
+.description > h1 {
+  font-size: 1.5em;
+  font-weight: 400; 
+  margin-top: 1em;
 }
 
 .description > p {
-  font-size: 0.5em;
+  font-size: 1em;
+  font-weight: 400; 
+  margin-top: 1.2em;
 }
 
-.feature_container > img {
-  max-width: 100%;
+/* Change for icon */
+.feature_container > img { 
+  /* max-width: 100%;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  width: 6em;
+  height: 6em;
+  margin: 2.4em auto 0;
+} 
+
+@media only screen and (max-width: 768px) {
+  .feature_container {
+    width: 12em;
+    height: 17em;
+  }
+  
+  .description {
+    margin: 0.8em;
+  }
+  
+  .description > p {
+    font-size: 0.6em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .feature_container {
+    width: 11.5em;
+    height: 17.5em;
+  }
+
+  .description {
+    margin: 0.8em;
+  }
+  
+  .description > p {
+    font-size: 0.6em;
+  }
+  
 }

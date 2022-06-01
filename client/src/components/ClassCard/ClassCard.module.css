@@ -1,13 +1,15 @@
 .container {
-  width: 23.1em;
-  height: 11em;
+  width: 21em;
+  height: 36em;
   background-color: #FF9F47;
-  display: flex;
-  border-radius: 20px;
+  /* display: flex; */
+  border-radius: 30px;
+  margin: 0 0.5em 0 0.5em;
+  position: relative;
 }
 
 .container:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.25s;
   transition-timing-function: ease-in;
   z-index: 1;
@@ -16,25 +18,29 @@
 .text {
   color: white;
   font-weight: 500;
-  padding: 1em;
+  padding: 2.5em;
 }
 
 .text>h1 {
-  font-size: 1.1em;
+  font-size: 1.5em;
+  line-height: 1.1;
 }
 
 .text>p {
-  font-size: .6em;
+  font-size: 1em;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .text>button {
   border: .17em solid white;
-  border-radius: 7px;
-  font-size: 0.60em;
-  padding: 0.40em;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+  /* padding: 0.5em 100%; */
+  padding: 0.4em 4.5em;
   position: relative;
   bottom: -1.5em;
-  right: -15em;
 }
 
 .text>button:hover {
@@ -42,9 +48,36 @@
 }
 
 .container>img {
-  width: 7.7em; 
-  height: 11em; 
+  width: auto; 
+  height: 40%; 
   object-fit: cover;
-  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .container {
+    width: 22em;
+    height: 11em;
+  }
+
+.text {
+  padding: 0.9em;
+}
+
+.text>h1 {
+  font-size: 0.9em;
+}
+
+.text>p {
+  font-size: .5em;
+}
+
+.container>img {
+  width: 7.5em; 
+  height: 11em; 
+}
 }

@@ -1,31 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 
 const classesData = [{
-    title: 'Course 1',
+    title: 'Python in the Real World',
     description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
   },{
-    title: 'Course 2',
+    title: 'Code Meets World',
     description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
   },{
-    title: 'Course 3',
-    description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  },{
-    title: 'Course 4',
-    description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  },{
-    title: 'Course 5',
-    description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  },{
-    title: 'Course 6',
-    description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  },{
-    title: 'Course 7',
-    description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  },{
-    title: 'Course 8',
-    description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
-  },{
-    title: 'Course 9',
+    title: 'Coding With Science',
     description: "Lorem ipsum dolor sit amet,.Donec laoreet tincidunt sollicitudin porttitor. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris neque. Donec vel ligula eu erat.",
   },]
 
@@ -55,31 +37,23 @@ export default function CoursesLogic({width}) {
     setCourses(data)
   }
 
-  const getLimit = useCallback(() => {
+  const fetchCourses = useCallback(() => {
 
-    if(width > 1260) limit.current = 3 
-    
-    else limit.current = 1
+    limit.current = width > 786 ? 3 : 1 
 
     last = limit.current
-
-  }, [width])
-
-  const fetchCourses = useCallback(() => {
 
     const data = classesData.slice(0, limit.current)
 
     setCourses(data)
 
-  }, [limit])
+  }, [width])
 
   useEffect(() => {
 
-    getLimit()
-
     fetchCourses()
 
-  }, [getLimit, fetchCourses])
+  }, [fetchCourses])
 
   
   return {fetchPrev, fetchNext, courses}
