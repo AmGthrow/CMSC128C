@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/CMSC128C/static/css/main.071b8232.css",
-    "main.js": "/CMSC128C/static/js/main.51ecdcfd.js",
+    "main.css": "/CMSC128C/static/css/main.16c58b77.css",
+    "main.js": "/CMSC128C/static/js/main.4e9baec3.js",
     "static/media/hero-bg.jpg": "/CMSC128C/static/media/hero-bg.2781d89531955c59852e.jpg",
+    "static/media/cmw.png": "/CMSC128C/static/media/cmw.2eeadbc1ffc5d0170664.png",
     "static/media/children-email.png": "/CMSC128C/static/media/children-email.10581c232d1edbe9c706.png",
+    "static/media/kid-headphones.png": "/CMSC128C/static/media/kid-headphones.47434dfe287387f7f869.png",
     "static/media/kids2.jpg": "/CMSC128C/static/media/kids2.630c5dd668c30e8b9269.jpg",
+    "static/media/wifi.png": "/CMSC128C/static/media/wifi.6a299aac23068a2dc4f3.png",
     "static/media/kids4.jpg": "/CMSC128C/static/media/kids4.667710955afb64c6a1f2.jpg",
-    "static/media/kids1.jpg": "/CMSC128C/static/media/kids1.8de793178ccc3ea10d3f.jpg",
+    "static/media/cws.png": "/CMSC128C/static/media/cws.f2e0e9e85c25d9ab6de7.png",
+    "static/media/check.png": "/CMSC128C/static/media/check.bdc22baa4459ca547c44.png",
     "static/media/nav-bar-logo.png": "/CMSC128C/static/media/nav-bar-logo.6799383c5256b8182001.png",
+    "static/media/nodes.png": "/CMSC128C/static/media/nodes.fadd8ea9835dbcc77b70.png",
+    "static/media/python.png": "/CMSC128C/static/media/python.347ab1a7c3622e823e1c.png",
     "index.html": "/CMSC128C/index.html",
-    "main.071b8232.css.map": "/CMSC128C/static/css/main.071b8232.css.map",
-    "main.51ecdcfd.js.map": "/CMSC128C/static/js/main.51ecdcfd.js.map"
+    "main.16c58b77.css.map": "/CMSC128C/static/css/main.16c58b77.css.map",
+    "main.4e9baec3.js.map": "/CMSC128C/static/js/main.4e9baec3.js.map"
   },
   "entrypoints": [
-    "static/css/main.071b8232.css",
-    "static/js/main.51ecdcfd.js"
+    "static/css/main.16c58b77.css",
+    "static/js/main.4e9baec3.js"
   ]
 }
