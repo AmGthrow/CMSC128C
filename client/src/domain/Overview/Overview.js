@@ -18,11 +18,11 @@ function VisionMission() {
         <div className={OCSS.visionmission}>
             <div className={OCSS.vmcontainer}>
                 <header className={OCSS.head2}>VISION</header>
-                <p className={OCSS.p2}>Once upon a pandemic day in 2020, a group of top-notch teachers from different schools and disciplines came together to bring Singapore's first coding school for kids to our shores.</p>
+                <p className={OCSS.p2}>To give Filipino children the opportunity to be at par with the 21st century skills the youth of Singapore enjoy.</p>
             </div>
             <div className={OCSS.vmcontainer}>
                 <header className={OCSS.head2}>MISSION</header>
-                <p className={OCSS.p2}>Once upon a pandemic day in 2020, a group of top-notch teachers from different schools and disciplines came together to bring Singapore's first coding school for kids to our shores.</p>
+                <p className={OCSS.p2}>We are committed to cultivate curious minds of children through a curriculum with pedagogical integrity, which allows them to always inquire, innovate, and contribute in meaningful ways to society, to become original thinkers and discover a sense of purpose.</p>
             </div>
         </div>
     </div>
