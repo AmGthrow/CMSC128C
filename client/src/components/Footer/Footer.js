@@ -20,7 +20,7 @@ function Logo() {
   return (
     <img
       id={FCSS.footer_logo}
-      src={require('../../assets/logo_textless.png')}
+      src={require('../../assets/company-logo-contrast.png')}
       alt='footer logo' />
   )
 }

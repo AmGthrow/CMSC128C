@@ -2,7 +2,7 @@
 .container {
   overflow: hidden;
   min-height: 90vh;
-  background-image: url("../../assets/hero-bg.jpg");
+  background-image: url("../../assets/new-bg.png");
   background-position: 50% 44%;
   background-size: cover;
   display: flex;
@@ -18,6 +18,16 @@
   color: #EE0017;
 }
 
+.name{ /* <p className={MBCSS.name}>CODERCADEMY</p> */
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  color: #EE0017;
+  font-style: italic;
+  /*  -webkit-text-stroke: 0px #EE0017; #ffca84 */
+}
+
+/* <p className={MBCSS.name}>CODERCADEMY</p> */
 .intro{
   padding-bottom:em;
   font-weight: 900;
@@ -27,7 +37,7 @@
 
 .since {
   font-size: 2em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-weight: 700;
 }
 
