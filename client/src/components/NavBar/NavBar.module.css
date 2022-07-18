@@ -24,15 +24,15 @@
 }
 
 .logo {
-  width: 110px;
+  width: 100px;
 }
 
 .rightSide {
   display: flex;
   list-style: none;
 
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .rightSide button {

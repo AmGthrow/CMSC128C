@@ -6,19 +6,19 @@ import icon3 from '../../assets/wifi.png'
 import {GrFormPrevious, GrFormNext} from 'react-icons/gr'
 
 const featuresData = [{
-    title: "Feature 1",
+    title: "Relevance",
     desc: "Our learning experiences are aligned to concepts in the K12 CS Framework, Next Generation Science Standards and Singapore MOE Science Syllabus.",
     color: "#0191CB",
     image: icon1
 },
 {
-    title: "Feature 2",
+    title: "Integration",
     desc: "We help kids develop the holistic skills, attitudes & mindsets from the OECD Learning Compass 2030.",
     color: "#EAD842",
     image: icon2
 },
 {
-    title: "Feature 3",
+    title: "Advocacy",
     desc: "We create awareness of & inspire action towards the UN Sustainable Development Goals.",
     color: "#E55454",
     image: icon3
